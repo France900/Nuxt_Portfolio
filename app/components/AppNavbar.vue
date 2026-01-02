@@ -12,7 +12,9 @@ const navLinks = [
 <template>
   <header class="border-b border-slate-800 bg-slate-900/70 backdrop-blur">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-      <div class="text-lg font-semibold tracking-tight">Nuxt Portfolio</div>
+      <NuxtLink to="/" class="flex items-center gap-3">
+        <img src="/logo_navbar.png" alt="Nuxt Portfolio" class="h-8 w-auto" />
+      </NuxtLink>
       <nav class="flex flex-wrap gap-2 text-sm">
         <NuxtLink
           v-for="link in navLinks"
