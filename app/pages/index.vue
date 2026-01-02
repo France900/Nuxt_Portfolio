@@ -1,13 +1,9 @@
 <template>
   <section class="space-y-12">
-    <div class="rounded-2xl bg-slate-900/70 p-10 shadow-xl ring-1 ring-slate-800">
-      <p class="text-sm uppercase tracking-[0.2em] text-blue-400">Online Portfolio &amp; More</p>
-      <h1 class="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-        Francesco Emanuele Livio
-      </h1>
-      <h2 class="mt-2 text-xl text-slate-300">Online Portfolio &amp; More</h2>
-    </div>
+        
+    <Hero />
 
+    <!-- Link alla repository -->
     <div class="space-y-3">
       <h3 class="text-lg font-semibold text-white">Esplora la repo</h3>
       <p class="text-slate-300">
@@ -17,6 +13,7 @@
       <p class="text-sm text-slate-500">Questo sito è volutamente non indicizzato per privacy.</p>
     </div>
 
+    <!-- Casi studio -->
     <div class="space-y-6">
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-400">Casi Studio</p>
@@ -34,7 +31,10 @@
         </p>
       </div>
 
+      <!-- Cards riepilogo pagine -->
       <div class="grid gap-4 md:grid-cols-2">
+
+        <!-- Pagina 2 / Landing -->
         <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
           <h4 class="text-lg font-semibold text-white">Pagina 2 / landing page</h4>
           <ul class="list-disc space-y-1 pl-5 text-slate-300">
@@ -46,6 +46,7 @@
           </ul>
         </div>
 
+        <!-- Pagina 3 / Whats here -->
         <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
           <h4 class="text-lg font-semibold text-white">Pagina 3 / whats here</h4>
           <p class="text-slate-300">Standards elements (gia presenti in homepage e evidenziati qui)</p>
@@ -73,6 +74,7 @@
           </div>
         </div>
 
+        <!-- Pagina 4 / Dashboard Dati -->
         <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
           <h4 class="text-lg font-semibold text-white">Pagina 4 / Dashboard Dati</h4>
           <ul class="list-disc space-y-1 pl-5 text-slate-300">
@@ -82,6 +84,7 @@
           </ul>
         </div>
 
+        <!-- Pagina 5 - SaaS (Software as a Service) -->
         <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
           <h4 class="text-lg font-semibold text-white">Pagina 5 - SaaS (Software as a Service)</h4>
           <ul class="list-disc space-y-1 pl-5 text-slate-300">
@@ -97,6 +100,7 @@
           </ul>
         </div>
 
+        <!-- Pagina 6 / About -->
         <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
           <h4 class="text-lg font-semibold text-white">Pagina 6 / About</h4>
           <ul class="list-disc space-y-1 pl-5 text-slate-300">
@@ -106,6 +110,7 @@
             <li>Lingue</li>
           </ul>
         </div>
+
       </div>
     </div>
   </section>
