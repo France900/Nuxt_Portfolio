@@ -1,18 +1,39 @@
 <template>
-  <section class="dropdown" @mouseenter="open = true" @mouseleave="open = false">
-    <span class="dropdown-title">{{ props.title }}</span>
-    <div v-show="open" class="dropdown-menu">
-      <router-link v-for="(item, index) in items" :key="index" :to="item.to" class="dropdown-alink">
+  <section
+    class="relative cursor-pointer select-none text-slate-100"
+    @mouseenter="open = true"
+    @mouseleave="open = false"
+  >
+    <span
+      class="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition hover:bg-slate-800/80"
+      :class="isActive ? 'bg-blue-600 text-white' : ''"
+    >
+      {{ props.title }}
+    </span>
+    <div
+      v-show="open"
+      class="absolute left-0 top-full z-20 flex min-w-[180px] w-[80vw] flex-col gap-1 rounded-lg border border-slate-800 bg-slate-800/95 p-2 shadow-xl backdrop-blur md:w-auto md:bg-slate-900/90"
+    >
+      <NuxtLink
+        v-for="(item, index) in items"
+        :key="index"
+        :to="item.to"
+        class="rounded-md px-3 py-2 text-sm text-slate-100 transition hover:bg-slate-700/80 aria-[current=page]:bg-blue-600"
+        @click="handleSelect"
+      >
         {{ item.label }}
-      </router-link>
+      </NuxtLink>
     </div>
   </section>
 </template>
 
-<!-- /*////////////////////////////////////////*//*////////////////////////////////////////*//*////////////////////////////////////////*//*////////////////////////////////////////*/ -->
+<!-- Script Code //*////////////////////////////////////////*//*////////////////////////////////////////*//*////////////////////////////////////////*/ -->
 
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
+import { useRoute } from '#imports'
+const emit = defineEmits(['select'])
+
 const open = ref(false)
 
 // Props
@@ -27,44 +48,13 @@ const props = defineProps({
   }
 })
 
+const route = useRoute()
+// Highlight the dropdown trigger when any child link matches the active route
+const isActive = computed(() => props.items?.some((item) => route.path.startsWith(item.to)))
 
+// Close dropdown immediately after selecting a link
+const handleSelect = () => {
+  open.value = false
+  emit('select')
+}
 </script>
-
-<!-- /*////////////////////////////////////////*//*////////////////////////////////////////*//*////////////////////////////////////////*//*////////////////////////////////////////*/ -->
-
-<style scoped>
-.dropdown {
-  position: relative;
-  padding: 0.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.dropdown:hover {
-  background-color: #444;
-}
-
-.dropdown-alink {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  color: white;
-  text-decoration: none;
-}
-
-.dropdown-alink:hover {
-  background-color: #555;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 102%;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  background-color: #444;
-  margin: 0;
-  min-width: 150px;
-  z-index: 10;
-  border-radius: 4px;
-}
-</style>
