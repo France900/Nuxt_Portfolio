@@ -1,10 +1,6 @@
 <template>
   <section class="space-y-6">
-    <div class="min-h-[220px] rounded-2xl bg-slate-900/70 p-10 shadow-xl ring-1 ring-slate-800">
-      <p class="text-sm uppercase tracking-[0.2em] text-blue-400">Chi sono e Disponibilità</p>
-      <h1 class="mt-3 text-4xl font-semibold tracking-tight text-white sm:text-5xl">About</h1>
-      <h2 class="mt-2 text-lg text-slate-300">Chi sono e Disponibilità</h2>
-    </div>
+    <MiniHero title="About" subtitle="Chi sono e Disponibilita" />
 
     <div class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
       <h3 class="text-xl font-semibold text-white">Breve Riepilogo</h3>
@@ -26,7 +22,8 @@
         <p>
           Il mio obbiettivo è trovare un azienda dove poter vedere le mie competenze crescere, in un mondo dove la
           tecnologia cresce a ritmo esponenziale, e diventare sempre piu padrone della capacità di sfruttare questa
-          crescita per creare funzionalità, prodotti e contenuti, (mantenendo allo stesso tempo un equilibrio vita lavoro
+          crescita per creare funzionalità, prodotti e contenuti, (mantenendo allo stesso tempo un equilibrio vita
+          lavoro
           costruttivo).
         </p>
       </div>
