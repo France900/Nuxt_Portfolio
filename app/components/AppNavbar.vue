@@ -7,7 +7,7 @@
       </NuxtLink>
 
       <!-- Mobile toggle -->
-      <MobileToggle class="md:hidden" :open="isOpen" aria-controls="mobile-menu" @toggle="toggleMenu" />
+      <MobileToggleCross class="md:hidden" :open="isOpen" aria-controls="mobile-menu" @toggle="toggleMenu" />
 
       <!-- Nav links (collapsible on mobile) -->
       <nav
@@ -26,6 +26,8 @@
         >
           {{ link.label }}
         </NuxtLink>
+        <Tendina />
+        <Tendina_props :title="propsMenu1.title" :items="propsMenu1.items" />
       </nav>
     </div>
   </header>
@@ -33,7 +35,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import MobileToggle from './navbar/MobileToggle.vue'
+import MobileToggleCross from './navbar/MobileToggleCross.vue'
+import Tendina from './navbar/Tendina.vue';
+import Tendina_props from './navbar/Tendina_props.vue';
 
 // Link list rendered both on mobile and desktop
 const navLinks = [
@@ -44,6 +48,15 @@ const navLinks = [
   { to: '/saas', label: 'SaaS' },
   { to: '/about', label: 'About' }
 ]
+
+const propsMenu1 = {
+  title: 'Props-1',
+  items: [
+    { to: '/propSample1', label: 'Link Esempio 1' },
+    { to: '/propSample2', label: 'Link Esempio 2' },
+    { to: '/propSample3', label: 'Link Esempio 3' }
+  ]
+}
 
 const isOpen = ref(false)
 // Toggle state for the mobile menu
