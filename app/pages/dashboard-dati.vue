@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 const filters = [
   { label: 'Periodo', value: 'Ultimi 30 giorni' },
   { label: 'Categoria', value: 'Tutte' },

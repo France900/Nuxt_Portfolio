@@ -31,7 +31,7 @@
   </header>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue'
 import MobileToggle from './navbar/MobileToggle.vue'
 
