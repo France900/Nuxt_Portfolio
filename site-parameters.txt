@@ -1,0 +1,29 @@
+Nuxt Portfolio - Parametri chiave (agg. 2026-01-05)
+Stack e layout:
+- Nuxt 3 + @nuxtjs/tailwindcss; CSS in app/assets/css/tailwind.css con scrollbar custom (track #171d34, thumb rgba(74,165,240,0.3)).
+- Shell in app/layouts/default.vue: bg-slate-950, text-slate-50, container centrale max-w-6xl con px-6 py-10, AppNavbar sticky e AppFooter.
+
+Palette (tailwind.config.js):
+- sfondo #171D34; card #1D233C; titoli #FFFFFF; paragrafi #AFB6D2; specifiche #D88730; bottone #4AA5F0; gradchiaro #3A4368; gradscuro #1A2037.
+- Palette tailwind dark aggiuntiva usata nel layout: slate-900/950 di sfondo, slate-50/100/300/400/500 per testi e bordi.
+
+Responsive (tailwind default):
+- sm 640px; md 768px; lg 1024px; xl 1280px; 2xl 1536px (nessun override).
+- Hero (app/components/Hero.vue): h 45vh mobile, 55vh md, 66vh lg; overlay nero 30%, mask decorativa, testo max-w-2xl in alto a sinistra.
+- Landing grid: video e CTA in 1 col su mobile -> 5 col su lg (video span 2, CTA span 3); sezione servizi 1 col -> 3 col su lg con gap 5/10; carousel con snap-x e immagini 288x192 -> 320x224 su lg.
+- Navbar: menu hamburger visibile sotto md, menu inline da md con backdrop-blur.
+
+Componenti chiave:
+- CardShadow: card notch con pseudo-elementi diagonali; min-height 328px; padding 1.7vw/2.5vw; usa variabili accent #4AA5F0, card-bg #1D233C, text #fff, muted #AFB6D2.
+- services_card: card servizi bg-card, border-2 border-card con hover border-bottone; immagini h-24 -> h-40, testi text-specifiche/text-base.
+- SimpleCarousel: heading text-bottone/titoli, gap 2->6, overflow-x auto e snap-mandatory.
+- CTA principale landing: bottone bg-bottone text-titoli, rounded-xl, focus outline bottone.
+
+Contenuti e dati:
+- Servizi definiti in app/data/servizi.json; landing mostra i primi 2 (limitedServices).
+- Asset principali in /public (logo_navbar.png, Mask.png, immagini mossy*, video/Animazione_LOGO.mp4, old_favicon.ico).
+
+Scaffolding rapido:
+- app/layouts/default.vue (shell), app/pages (home, landing, whats-here, dashboard-dati, saas, about, catchall).
+- app/components (AppNavbar/AppFooter, Hero/MiniHero, CardShadow, services_card, SimpleCarousel, navbar/*.vue).
+- Config: nuxt.config.js (modulo tailwind) e tailwind.config.js (palette estesa). Composable dati in app/composables/useData.js.

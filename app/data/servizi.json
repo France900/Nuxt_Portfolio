@@ -1,0 +1,38 @@
+﻿[
+  {
+    "id": 1,
+    "icona": "/icons/nuxt_logo.png",
+    "titolo_riga_1": "Sviluppo Web",
+    "titolo_riga_2": "Personalizzato",
+    "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+    "prezzo": "",
+    "bottone": ""
+  },
+  {
+    "id": 3,
+    "icona": "/icons/bug-fixes-icon.png",
+    "titolo_riga_1": "Analisi tecnica",
+    "titolo_riga_2": "e miglioramenti",
+    "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+    "prezzo": "",
+    "bottone": ""
+  },
+  {
+    "id": 5,
+    "icona": "/icons/7358361.webp",
+    "titolo_riga_1": "Web Design &",
+    "titolo_riga_2": "Creative Design",
+    "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+    "prezzo": "",
+    "bottone": ""
+  },
+  {
+    "id": 6,
+    "icona": "/icons/7358369.webp",
+    "titolo_riga_1": "Branding",
+    "titolo_riga_2": "",
+    "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make",
+    "prezzo": "",
+    "bottone": ""
+  }
+]

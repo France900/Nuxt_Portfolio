@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* webkit per la scrollbar */
+::-webkit-scrollbar {
+	width: 8px; /* Corrisponde a 'thin' in termini di larghezza per WebKit */
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #171d34; /* Colore dello sfondo della traccia, equivalente al secondo valore in 'scrollbar-color' */
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(
+		74,
+		165,
+		240,
+		0.3
+	); /* Colore dello scorrevole, equivalente al primo valore in 'scrollbar-color' */
+	border-radius: 4px; /* Opzionale: aggiunge arrotondamento ai lati del thumb per un aspetto più morbido */
+}
