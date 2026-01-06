@@ -75,7 +75,7 @@ import { onBeforeUnmount, onMounted, ref } from 'vue'
 const { t } = useI18n()
 
 // Timeout fisso per la chiusura automatica
-const autoCloseMs = 25000
+const autoCloseMs = 35000
 
 // Stato reattivo per visibilità banner e countdown in secondi
 const showBanner = ref(false)

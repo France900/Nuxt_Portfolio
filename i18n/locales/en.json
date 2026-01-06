@@ -1,8 +1,8 @@
 {
   "firstVisitBanner": {
-    "badge": "Heads up",
+    "badge": "Please note",
     "title": "Welcome - Portfolio under construction",
-    "body": "Development happens in the evenings after my main job or on weekends, so some sections are still incomplete",
+    "body": "This website-portfolio is still under construction. Development takes place in the evenings after my main job or on weekends, so some sections may be incomplete or subject to change",
     "autoClose": "Closes automatically in {seconds}s",
     "closeAria": "Dismiss alert",
     "cta": "Got it"
