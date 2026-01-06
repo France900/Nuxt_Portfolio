@@ -8,7 +8,7 @@
       <h3 class="text-lg font-semibold text-white">Esplora la repo</h3>
       <p class="text-slate-300">
         Per esplorare la GitHub Repository di questo sito sequi pure questo link
-        <NuxtLink to="https://google.com" class="text-blue-400 underline hover:text-blue-300">link</NuxtLink>.
+        <NuxtLink to="https://github.com/France900/Nuxt_Portfolio" class="text-blue-400 underline hover:text-blue-300">link</NuxtLink>.
       </p>
       <p class="text-sm text-slate-500">Questo sito è volutamente non indicizzato per privacy.</p>
     </div>
@@ -26,8 +26,7 @@
         <h4 class="text-lg font-semibold text-white">Costruzione</h4>
         <p class="text-slate-300">
           Il sito è fatto con Nuxt 3, SFC, Tailwind e i18n utilizzando Codex come integrazione allo
-          sviluppo per l’ottimizzazione dei processi. E’ possibile procedere all’esplorazione del sito nelle
-          seguenti parti-studio:
+          sviluppo per l’ottimizzazione dei processi. Le varie parti del sito sono nell'indice sottostante, con un link rapido per andarne a vedere il funzionamento:
         </p>
       </div>
 
@@ -36,9 +35,10 @@
 
         <!-- Pagina 2 / Landing -->
         <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
-          <h4 class="text-lg font-semibold text-white">Pagina 2 / landing page</h4>
+          <h4 class="text-lg font-semibold text-white">Landing Page Esempio</h4>
+          <p>Contiene alcuni elementi standard semplici, fra cui:</p>
           <ul class="list-disc space-y-1 pl-5 text-slate-300">
-            <li>Video Embed</li>
+            <li>Video Embed;</li>
             <li>Cards (con shadow)</li>
             <li>Carosello</li>
             <li>Buttons</li>
