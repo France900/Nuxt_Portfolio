@@ -29,12 +29,12 @@
 
             <!-- Testo del messaggio e countdown -->
             <div class="flex-1 space-y-2">
-              <p class="text-sm uppercase tracking-[0.2em] text-blue-300">Tieni presente</p>
-              <h2 class="text-xl font-semibold text-white">Benvenuto - Portfolio in costruzione</h2>
-              <p class="text-sm leading-relaxed text-slate-200">Lo sviluppo procede esclusivamente la sera dopo il mio lavoro principale o nei weekends perciò alcune sezioni sono ancora incomplete</p>
+              <p class="text-sm uppercase tracking-[0.2em] text-blue-300">{{ t('firstVisitBanner.badge') }}</p>
+              <h2 class="text-xl font-semibold text-white">{{ t('firstVisitBanner.title') }}</h2>
+              <p class="text-sm leading-relaxed text-slate-200">{{ t('firstVisitBanner.body') }}</p>
               <!-- Countdown mostrato solo se esiste auto chiusura -->
               <p v-if="autoCloseMs" class="text-xs text-slate-400">
-                Si chiude automaticamente in {{ remainingSeconds }}s
+                {{ t('firstVisitBanner.autoClose', { seconds: remainingSeconds },"s") }}
               </p>
             </div>
 
@@ -42,7 +42,7 @@
             <button
               type="button"
               class="rounded-full p-2 text-slate-400 transition hover:bg-slate-800 hover:text-white"
-              aria-label="Chiudi avviso"
+              :aria-label="t('firstVisitBanner.closeAria')"
               @click="dismiss('button')"
             >
               <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -59,7 +59,7 @@
               class="rounded-full bg-blue-500 px-3 py-1 font-medium text-white transition hover:bg-blue-400"
               @click="dismiss('button')"
             >
-              Ok, ho capito
+              {{ t('firstVisitBanner.cta') }}
             </button>
           </div>
         </div>
@@ -70,6 +70,9 @@
 
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
+
+// Localizzazione contenuti del banner
+const { t } = useI18n()
 
 // Timeout fisso per la chiusura automatica
 const autoCloseMs = 25000
@@ -122,3 +125,9 @@ onBeforeUnmount(() => {
   clearTimers()
 })
 </script>
+
+
+
+
+
+

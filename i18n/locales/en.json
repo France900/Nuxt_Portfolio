@@ -1,0 +1,10 @@
+{
+  "firstVisitBanner": {
+    "badge": "Heads up",
+    "title": "Welcome - Portfolio under construction",
+    "body": "Development happens in the evenings after my main job or on weekends, so some sections are still incomplete",
+    "autoClose": "Closes automatically in {seconds}s",
+    "closeAria": "Dismiss alert",
+    "cta": "Got it"
+  }
+}
