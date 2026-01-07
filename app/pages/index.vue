@@ -1,6 +1,6 @@
 <template>
-  <section class="space-y-12">
-        
+  <div class="space-y-12">
+
     <Hero />
 
     <!-- Link alla repository -->
@@ -8,10 +8,27 @@
       <h3 class="text-lg font-semibold text-white">Esplora la repo</h3>
       <p class="text-slate-300">
         Per esplorare la GitHub Repository di questo sito sequi pure questo link
-        <NuxtLink to="https://github.com/France900/Nuxt_Portfolio" class="text-blue-400 underline hover:text-blue-300">link</NuxtLink>.
+        <NuxtLink to="https://github.com/France900/Nuxt_Portfolio" class="text-blue-400 underline hover:text-blue-300">
+          link</NuxtLink>.
       </p>
       <p class="text-sm text-slate-500">Questo sito è volutamente non indicizzato per privacy.</p>
     </div>
+
+    <!-- tecnologie usate -->
+    <section class="flex flex-col items-center my-5 lg:my-8">
+      <h3 class="text-xl text-bottone">STRUMENTI</h3>
+      <h2 class="text-3xl text-center lg:text-4xl text-titoli font-semibold">
+        Le nostre tecnologie base, pronti ad ampliarle
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 mt-2.5 lg:mt-10">
+        <a :href="tool.url" target="_blank"
+          class="bg-card rounded-2xl flex flex-col items-center p-6 border-card border-2 hover:border-bottone"
+          v-for="tool in technologies" :key="index">
+          <img :src="`/icons/${tool.logo}.png`" alt="img tecnologia" class="h-20" />
+          <p class="text-center text-xl pt-6">{{ tool.name }}</p>
+        </a>
+      </div>
+    </section>
 
     <!-- Casi studio -->
     <div class="space-y-6">
@@ -26,7 +43,8 @@
         <h4 class="text-lg font-semibold text-white">Costruzione</h4>
         <p class="text-slate-300">
           Il sito è fatto con Nuxt 3, SFC, Tailwind e i18n utilizzando Codex come integrazione allo
-          sviluppo per l’ottimizzazione dei processi. Le varie parti del sito sono nell'indice sottostante, con un link rapido per andarne a vedere il funzionamento:
+          sviluppo per l’ottimizzazione dei processi. Le varie parti del sito sono nell'indice sottostante, con un link
+          rapido per andarne a vedere il funzionamento:
         </p>
       </div>
 
@@ -113,5 +131,14 @@
 
       </div>
     </div>
-  </section>
+  </div>
 </template>
+
+<script setup>
+const technologies = ref([
+  { logo: "nuxt_logo", name: "Nuxt", url: "https://nuxt.com/" },
+  { logo: "tailwind", name: "Tailwind", url: "https://tailwindcss.com/" },
+  { logo: "figma", name: "Figma", url: "https://help.figma.com/hc/en-us" },
+  { logo: "click-up", name: "Click-up", url: "https://clickup.com/" },
+]);
+</script>
