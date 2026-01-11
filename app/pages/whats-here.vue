@@ -1,8 +1,12 @@
-<template>
+﻿<template>
+  <!-- Pagina: panoramica dei contenuti disponibili, organizzata in tre macro-sezioni -->
   <section class="space-y-8">
+    <!-- Hero compatto con titolo e sottotitolo della pagina -->
     <MiniHero title="Whats here" subtitle="Panoramica di cosa puoi trovare qui" />
 
+    <!-- Sezione UI: componenti/elementi riutilizzabili presenti in homepage -->
     <div class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+      <!-- Intestazione di sezione con badge e descrizione -->
       <div class="flex items-center gap-3">
         <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-sky-300 font-semibold">
           UI
@@ -12,7 +16,9 @@
           <h3 class="text-xl font-semibold text-white">Blocchi riutilizzabili che trovi in homepage</h3>
         </div>
       </div>
+      <!-- Griglia di card descrittive dei blocchi UI -->
       <div class="grid gap-4 md:grid-cols-2">
+        <!-- Card: jumbo/hero animato -->
         <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
           <div class="flex items-center gap-2">
             <span class="text-lg">🎯</span>
@@ -23,6 +29,7 @@
             Pensato per essere riutilizzabile cambiando copy, pulsanti e asset.
           </p>
         </div>
+        <!-- Card: navbar configurabile via props -->
         <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
           <div class="flex items-center gap-2">
             <span class="text-lg">🧭</span>
@@ -35,80 +42,105 @@
         </div>
       </div>
     </div>
+    <!-- Casi studio -->
+    <div class="space-y-6">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-blue-400">Casi Studio</p>
+        <h3 class="mt-2 text-2xl font-semibold text-white">
+          Questo sito raccoglie alcuni esempi di componenti, view e dipendenze
+        </h3>
+      </div>
 
-    <div class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
-      <div class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-emerald-300 font-semibold">
-          Dev
-        </div>
-        <div>
-          <p class="text-sm uppercase tracking-wide text-slate-400">Tecnologie usate</p>
-          <h3 class="text-xl font-semibold text-white">Stack e come lo sto applicando qui</h3>
-        </div>
+      <div class="space-y-4 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+        <h4 class="text-lg font-semibold text-white">Costruzione</h4>
+        <p class="text-slate-300">
+          Il sito è fatto con Nuxt 3, SFC, Tailwind e i18n utilizzando Codex come integrazione allo
+          sviluppo per l’ottimizzazione dei processi. Le varie parti del sito sono nell'indice sottostante, con un link
+          rapido per andarne a vedere il funzionamento:
+        </p>
       </div>
-      <div class="grid gap-4 md:grid-cols-2">
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex items-center gap-2">
-            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-emerald-900/40 text-emerald-300 font-bold">N</div>
-            <h4 class="text-lg font-semibold text-white">Nuxt</h4>
-          </div>
-          <p class="text-slate-300">SSG/SSR, routing file-based e componenti auto-registrati. Layout puliti e ottimizzazioni out-of-the-box.</p>
-        </div>
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex items-center gap-2">
-            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-sky-900/40 text-sky-300 font-bold">TW</div>
-            <h4 class="text-lg font-semibold text-white">Tailwind</h4>
-          </div>
-          <p class="text-slate-300">Utility-first per tipografia, layout e stati. Dark e light mode previsti (switcher in arrivo) con token condivisi.</p>
-        </div>
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex h-9 w-9 items-center justify-center rounded-md bg-indigo-900/40 text-indigo-300 font-bold">i18n</div>
-          <h4 class="text-lg font-semibold text-white">i18n</h4>
-          <p class="text-slate-300">Localizzazione pronta: chiavi testuali centralizzate e switch di lingua che potremo attivare sulle pagine principali.</p>
-        </div>
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex h-9 w-9 items-center justify-center rounded-md bg-orange-900/40 text-orange-300 font-bold">Mail</div>
-          <h4 class="text-lg font-semibold text-white">EmailJS vs n8n</h4>
-          <p class="text-slate-300">Valutazione per invio form: EmailJS per rapidita client-side, n8n per flussi piu robusti (log, retry, webhooks).</p>
-        </div>
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex h-9 w-9 items-center justify-center rounded-md bg-lime-900/40 text-lime-300 font-bold">NL</div>
-          <h4 class="text-lg font-semibold text-white">Netlify</h4>
-          <p class="text-slate-300">Hosting JAMstack con deploy continui, redirect gestiti e edge functions per futuri endpoint leggeri.</p>
-        </div>
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex h-9 w-9 items-center justify-center rounded-md bg-purple-900/40 text-purple-300 font-bold">CX</div>
-          <h4 class="text-lg font-semibold text-white">Codex</h4>
-          <p class="text-slate-300">Assistente di sviluppo per scaffolding, refactoring rapido e documentazione inline mentre evolvo il progetto.</p>
-        </div>
-      </div>
-    </div>
 
-    <div class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
-      <div class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-amber-300 font-semibold">
-          Ops
-        </div>
-        <div>
-          <p class="text-sm uppercase tracking-wide text-slate-400">Altre competenze</p>
-          <h3 class="text-xl font-semibold text-white">Strumenti di supporto che uso spesso</h3>
-        </div>
-      </div>
+      <!-- Cards riepilogo pagine -->
       <div class="grid gap-4 md:grid-cols-2">
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex items-center gap-2">
-            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-amber-900/40 text-amber-300 font-bold">CU</div>
-            <h4 class="text-lg font-semibold text-white">ClickUp</h4>
-          </div>
-          <p class="text-slate-300">Usato come PM per startup: roadmap, backlog grooming, automazioni per ticket e monitoraggio dei KPI di delivery.</p>
+
+        <!-- Pagina 2 / Landing -->
+        <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+          <h4 class="text-lg font-semibold text-white">Landing Page Esempio</h4>
+          <p>Contiene alcuni elementi standard semplici, fra cui:</p>
+          <ul class="list-disc space-y-1 pl-5 text-slate-300">
+            <li>Video Embed;</li>
+            <li>Cards (con shadow)</li>
+            <li>Carosello</li>
+            <li>Buttons</li>
+            <li>Email-JS</li>
+          </ul>
         </div>
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex items-center gap-2">
-            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-pink-900/40 text-pink-300 font-bold">Fg</div>
-            <h4 class="text-lg font-semibold text-white">Figma</h4>
+
+        <!-- Pagina 3 / Whats here -->
+        <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+          <h4 class="text-lg font-semibold text-white">Pagina 3 / whats here</h4>
+          <p class="text-slate-300">Standards elements (gia presenti in homepage e evidenziati qui)</p>
+          <ul class="list-disc space-y-1 pl-5 text-slate-300">
+            <li>Jumbo (con animazione)</li>
+            <li>Navbar (parametrizzata, burgher menu animato)</li>
+          </ul>
+          <div>
+            <p class="font-semibold text-white">Tecnologie usate</p>
+            <ul class="list-disc space-y-1 pl-5 text-slate-300">
+              <li>Nuxt</li>
+              <li>TailWind</li>
+              <li>i18n</li>
+              <li>Email-JS vs n8n</li>
+              <li>Netlify</li>
+              <li>Codex</li>
+            </ul>
           </div>
-          <p class="text-slate-300">Wireframe e handoff: traccio layout o seguo i design ricevuti, importo componenti e li traduco in UI aderenti.</p>
+          <div>
+            <p class="font-semibold text-white">Altre competenze:</p>
+            <ul class="list-disc space-y-1 pl-5 text-slate-300">
+              <li>ClickUp</li>
+              <li>Figma</li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Pagina 4 / Dashboard Dati -->
+        <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+          <h4 class="text-lg font-semibold text-white">Pagina 4 / Dashboard Dati</h4>
+          <ul class="list-disc space-y-1 pl-5 text-slate-300">
+            <li>Filtri</li>
+            <li>Grafici</li>
+            <li>API</li>
+          </ul>
+        </div>
+
+        <!-- Pagina 5 - SaaS (Software as a Service) -->
+        <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+          <h4 class="text-lg font-semibold text-white">Pagina 5 - SaaS (Software as a Service)</h4>
+          <ul class="list-disc space-y-1 pl-5 text-slate-300">
+            <li>Form email/password per sign up</li>
+            <li>Login Frontend</li>
+            <li>
+              Dashboard utente con: sidebar di navigazione, header, statistiche fittizie, grafico (Chart.js o
+              ApexCharts), tabella dati filtrabile
+            </li>
+            <li>Gestione profilo: form “modifica dati” (non salva davvero).</li>
+            <li>Lista oggetti: clienti, task, progetti.</li>
+            <li>CRUD finto: “Aggiungi” crea riga in più (solo client-side).</li>
+          </ul>
+        </div>
+
+        <!-- Pagina 6 / About -->
+        <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
+          <h4 class="text-lg font-semibold text-white">Pagina 6 / About</h4>
+          <ul class="list-disc space-y-1 pl-5 text-slate-300">
+            <li>Riepilogo</li>
+            <li>Disponibilità</li>
+            <li>Patenti</li>
+            <li>Lingue</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </section>

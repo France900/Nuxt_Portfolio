@@ -46,7 +46,7 @@
         </ul>
         <p>
           Resto disponibile a tutte le opzioni sopra elencate, considerando che ritengo di dare il massimo come
-          produttività e soprattutto come qualità in un lavoro full-remote, compreso fra le 30 e le 35 ore, parzialmente
+          produttività e soprattutto come qualità in un lavoro full-remote, compreso fra le 30 e le 32 ore, parzialmente
           sincrono e/o in squadra e parzialmente asincrono tramite il completamento di task.
         </p>
         <p>
