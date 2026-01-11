@@ -15,7 +15,6 @@
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      netlify
       @submit.prevent="handleSubmit"
     >
       <!-- action="/thanks" -->
