@@ -40,57 +40,36 @@
 
     <!-- Sezione Dev: stack tecnico e motivazioni d'uso -->
     <div class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
-      <!-- Intestazione di sezione con badge e descrizione -->
+      <!-- Intestazione e descrizione -->
       <div class="flex items-center gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-emerald-300 font-semibold">
+        <div
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-emerald-300 font-semibold">
           Dev
         </div>
         <div>
           <p class="text-sm uppercase tracking-wide text-slate-400">Tecnologie usate</p>
-          <h3 class="text-xl font-semibold text-white">Stack e come lo sto applicando qui</h3>
+          <h3 class="text-xl font-semibold text-white">
+            Stack e come lo sto applicando qui; scopri di piu in 
+            <NuxtLink to="/whats-here" class="text-blue-400 underline hover:text-blue-300"> whats here</NuxtLink>
+          </h3>
         </div>
       </div>
-      <!-- Griglia di card: tecnologia + note di utilizzo -->
+
+       <!-- Griglia di card: tecnologia + note di utilizzo -->
       <div class="grid gap-4 md:grid-cols-2">
-        <!-- Card: Nuxt -->
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
+        <div v-for="(item, index) in stackItems" :key="index"
+          class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
           <div class="flex items-center gap-2">
-            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-emerald-900/40 text-emerald-300 font-bold">N</div>
-            <h4 class="text-lg font-semibold text-white">Nuxt</h4>
+            <div class="flex h-9 w-9 items-center justify-center rounded-md font-bold" :class="item.classes">
+              {{ item.badge }}
+            </div>
+            <h4 class="text-lg font-semibold text-white">
+              {{ item.title }}
+            </h4>
           </div>
-          <p class="text-slate-300">SSG/SSR, routing file-based e componenti auto-registrati. Layout puliti e ottimizzazioni out-of-the-box.</p>
-        </div>
-        <!-- Card: Tailwind -->
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex items-center gap-2">
-            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-sky-900/40 text-sky-300 font-bold">TW</div>
-            <h4 class="text-lg font-semibold text-white">Tailwind</h4>
-          </div>
-          <p class="text-slate-300">Utility-first per tipografia, layout e stati. Dark e light mode previsti (switcher in arrivo) con token condivisi.</p>
-        </div>
-        <!-- Card: i18n -->
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex h-9 w-9 items-center justify-center rounded-md bg-indigo-900/40 text-indigo-300 font-bold">i18n</div>
-          <h4 class="text-lg font-semibold text-white">i18n</h4>
-          <p class="text-slate-300">Localizzazione pronta: chiavi testuali centralizzate e switch di lingua che potremo attivare sulle pagine principali.</p>
-        </div>
-        <!-- Card: EmailJS vs n8n (scelta per form) -->
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex h-9 w-9 items-center justify-center rounded-md bg-orange-900/40 text-orange-300 font-bold">Mail</div>
-          <h4 class="text-lg font-semibold text-white">EmailJS vs n8n</h4>
-          <p class="text-slate-300">Valutazione per invio form: EmailJS per rapidita client-side, n8n per flussi piu robusti (log, retry, webhooks).</p>
-        </div>
-        <!-- Card: Netlify -->
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex h-9 w-9 items-center justify-center rounded-md bg-lime-900/40 text-lime-300 font-bold">NL</div>
-          <h4 class="text-lg font-semibold text-white">Netlify</h4>
-          <p class="text-slate-300">Hosting JAMstack con deploy continui, redirect gestiti e edge functions per futuri endpoint leggeri.</p>
-        </div>
-        <!-- Card: Codex -->
-        <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
-          <div class="flex h-9 w-9 items-center justify-center rounded-md bg-purple-900/40 text-purple-300 font-bold">CX</div>
-          <h4 class="text-lg font-semibold text-white">Codex</h4>
-          <p class="text-slate-300">Assistente di sviluppo per scaffolding, refactoring rapido e documentazione inline mentre evolvo il progetto.</p>
+          <p class="text-slate-300">
+            {{ item.description }}
+          </p>
         </div>
       </div>
     </div>
@@ -112,20 +91,71 @@
         <!-- Card: ClickUp -->
         <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
           <div class="flex items-center gap-2">
-            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-amber-900/40 text-amber-300 font-bold">CU</div>
+            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-amber-900/40 text-amber-300 font-bold">CU
+            </div>
             <h4 class="text-lg font-semibold text-white">ClickUp</h4>
           </div>
-          <p class="text-slate-300">Usato come PM per startup: roadmap, backlog grooming, automazioni per ticket e monitoraggio dei KPI di delivery.</p>
+          <p class="text-slate-300">Usato come PM per startup: roadmap, backlog grooming, automazioni per ticket e
+            monitoraggio dei KPI di delivery.</p>
         </div>
         <!-- Card: Figma -->
         <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
           <div class="flex items-center gap-2">
-            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-pink-900/40 text-pink-300 font-bold">Fg</div>
+            <div class="flex h-9 w-9 items-center justify-center rounded-md bg-pink-900/40 text-pink-300 font-bold">Fg
+            </div>
             <h4 class="text-lg font-semibold text-white">Figma</h4>
           </div>
-          <p class="text-slate-300">Wireframe e handoff: traccio layout o seguo i design ricevuti, importo componenti e li traduco in UI aderenti.</p>
+          <p class="text-slate-300">Wireframe e handoff: traccio layout o seguo i design ricevuti, importo componenti e
+            li traduco in UI aderenti.</p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+const stackItems = [
+  {
+    badge: 'N',
+    title: 'Nuxt',
+    description:
+      'Struttura intuitiva del progetto e navigazione fluida senza ricaricare la pagina: rende lo sviluppo più semplice, ordinato e naturale anche su progetti complessi.',
+    classes: 'bg-emerald-900/40 text-emerald-300',
+  },
+  {
+    badge: 'TW',
+    title: 'Tailwind',
+    description:
+      'Sistema di stile snello, rapido e uniforme: usa classi leggibili e chiare soprattutto uniformando il modo di lavorare sullo stile tra più persone nello stesso progetto.',
+    classes: 'bg-sky-900/40 text-sky-300',
+  },
+  {
+    badge: 'i18n',
+    title: 'i18n',
+    description:
+      'Gestione centralizzata delle lingue: testi organizzati in un unico punto e possibilità di attivare facilmente il cambio lingua sulle pagine principali.',
+    classes: 'bg-indigo-900/40 text-indigo-300',
+  },
+  {
+    badge: 'Mail',
+    title: 'EmailJS vs n8n',
+    description:
+      'n8n è più potente e flessibile ma richiede una gestione della struttura, mentre EmailJS è gratuito e integrabile direttamente via JavaScript con la propria email.',
+    classes: 'bg-orange-900/40 text-orange-300',
+  },
+  {
+    badge: 'NL',
+    title: 'Netlify',
+    description:
+      'Pubblicazione semplice del sito: collegamento a GitHub, deploy automatico a ogni aggiornamento e hosting gratuito per progetti frontend',
+    classes: 'bg-lime-900/40 text-lime-300',
+  },
+  {
+    badge: 'CX',
+    title: 'Codex',
+    description:
+      'Assistente di sviluppo che, se usato con controllo sul codice, permette di aumentare la velocità di programmazione supportando scaffolding, refactoring e organizzazione del progetto.',
+    classes: 'bg-purple-900/40 text-purple-300',
+  },
+]
+</script>
