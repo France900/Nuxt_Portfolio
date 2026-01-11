@@ -35,6 +35,8 @@
 
 <SimpleCarousel />
 
+<NetlifyContactForm />
+
 </template>
 
 
