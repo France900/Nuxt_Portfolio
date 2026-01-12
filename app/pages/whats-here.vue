@@ -3,7 +3,7 @@
   <section class="space-y-8">
     <!-- Hero compatto con titolo e sottotitolo della pagina -->
     <MiniHero title="Whats here" subtitle="Panoramica di cosa puoi trovare qui" />
-
+    <h3 class="text-xl font-semibold text-red-800">{{ t('temporary.underDevelopment') }}</h3>
     <!-- Sezione UI: componenti/elementi riutilizzabili presenti in homepage -->
     <div class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
       <!-- Intestazione di sezione con badge e descrizione -->
@@ -55,7 +55,7 @@
         <h4 class="text-lg font-semibold text-white">Costruzione</h4>
         <p class="text-slate-300">
           Il sito è fatto con Nuxt 3, SFC, Tailwind e i18n utilizzando Codex come integrazione allo
-          sviluppo per l’ottimizzazione dei processi. Le varie parti del sito sono nell'indice sottostante, con un link
+          sviluppo per l'ottimizzazione dei processi. Le varie parti del sito sono nell'indice sottostante, con un link
           rapido per andarne a vedere il funzionamento:
         </p>
       </div>
@@ -79,7 +79,7 @@
         <!-- Pagina 3 / Whats here -->
         <div class="space-y-3 rounded-xl border border-slate-800 bg-slate-900/60 p-6">
           <h4 class="text-lg font-semibold text-white">Pagina 3 / whats here</h4>
-          <p class="text-slate-300">Standards elements (gia presenti in homepage e evidenziati qui)</p>
+          <p class="text-slate-300">Standard elements (già presenti in homepage e evidenziati qui)</p>
           <ul class="list-disc space-y-1 pl-5 text-slate-300">
             <li>Jumbo (con animazione)</li>
             <li>Navbar (parametrizzata, burgher menu animato)</li>
@@ -124,9 +124,9 @@
               Dashboard utente con: sidebar di navigazione, header, statistiche fittizie, grafico (Chart.js o
               ApexCharts), tabella dati filtrabile
             </li>
-            <li>Gestione profilo: form “modifica dati” (non salva davvero).</li>
+            <li>Gestione profilo: form "modifica dati" (non salva davvero).</li>
             <li>Lista oggetti: clienti, task, progetti.</li>
-            <li>CRUD finto: “Aggiungi” crea riga in più (solo client-side).</li>
+            <li>CRUD finto: "Aggiungi" crea riga in più (solo client-side).</li>
           </ul>
         </div>
 
@@ -145,3 +145,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const { t } = useI18n()
+</script>

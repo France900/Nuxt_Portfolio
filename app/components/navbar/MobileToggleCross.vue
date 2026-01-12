@@ -4,10 +4,10 @@
     class="flex h-10 w-10 items-center justify-center rounded-md border border-slate-800 bg-slate-900 text-slate-100 transition hover:bg-slate-800"
     :aria-expanded="open"
     :aria-controls="ariaControls"
-    :aria-label="open ? 'Chiudi il menu' : 'Apri il menu'"
+    :aria-label="open ? t('navbar.mobile.close') : t('navbar.mobile.open')"
     @click="$emit('toggle')"
   >
-    <span class="sr-only">{{ open ? 'Chiudi il menu' : 'Apri il menu' }}</span>
+    <span class="sr-only">{{ open ? t('navbar.mobile.close') : t('navbar.mobile.open') }}</span>
     <div class="hamburger pointer-events-none">
       <div :class="lineClasses('line1')"></div>
       <div :class="lineClasses('line2')"></div>
@@ -16,17 +16,23 @@
   </button>
 </template>
 
-<script setup lang="ts">
-const props = defineProps<{
-  open: boolean
-  ariaControls?: string
-}>()
+<script setup>
+const { t } = useI18n()
 
-defineEmits<{
-  toggle: []
-}>()
+const props = defineProps({
+  open: {
+    type: Boolean,
+    required: true,
+  },
+  ariaControls: {
+    type: String,
+    default: undefined,
+  },
+})
 
-const lineClasses = (line: 'line1' | 'line2' | 'line3') => [line, 'divLinea', { active: props.open }]
+defineEmits(['toggle'])
+
+const lineClasses = (line) => [line, 'divLinea', { active: props.open }]
 </script>
 
 <style scoped>

@@ -1,8 +1,8 @@
 <template>
   <section class="gk--container flex flex-col items-center my-5 lg:my-8">
-    <h3 class="text-xl text-bottone">I LIKE MOSS AND GECKOS</h3>
+    <h3 class="text-xl text-bottone">{{ t('landing.carousel.subtitle') }}</h3>
     <h2 class="text-3xl lg:text-4xl text-titoli text-center text-nowrap font-semibold">
-      Some Best Forests
+      {{ t('landing.carousel.title') }}
     </h2>
 
     <article class="relative flex gap-2 lg:gap-6 overflow-x-auto py-2.5 lg:py-10 snap-x snap-mandatory max-w-full">
@@ -20,7 +20,7 @@
       </div>
     </article>
     <p class="max-lg:hidden pt-2">
-      Premi "shift" e usa la rotella del mouse per scorrermi Orizontale!
+      {{ t('landing.carousel.shiftHint') }}
     </p>
 
     <!-- Lightbox overlay -->
@@ -70,6 +70,8 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const { t } = useI18n()
 
 const heroImages = [
   '/mossyRiverInAForest1.png',

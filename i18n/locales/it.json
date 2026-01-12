@@ -1,4 +1,4 @@
-{
+﻿{
   "firstVisitBanner": {
     "badge": "Tieni presente",
     "title": "Benvenuto - Portfolio in costruzione",
@@ -6,5 +6,184 @@
     "autoClose": "Si chiude automaticamente in {seconds}s",
     "closeAria": "Chiudi avviso",
     "cta": "Ok, ho capito"
+  },
+  "temporary": {
+    "underDevelopment": "Ancora in sviluppo"
+  },
+  "home": {
+    "repo": {
+      "textBeforeLink": "Per esplorare la Repository GitHub di questo sito segui pure questo ",
+      "linkLabel": "link",
+      "textAfterLink": ".",
+      "privacy": "Questo sito è volutamente non indicizzato per privacy."
+    },
+    "intro": {
+      "avatarAlt": "Avatar",
+      "paragraph1": "Ciao, mi chiamo Francesco e lavoro nell'ambito IT da ormai più di 5 anni, anche se in ruoli diversi e occupandomi di attività eterogenee, dalla parte tecnica allo sviluppo di progetti personali.",
+      "paragraph2": "Questo sito raccoglie esperimenti, studi e lavori legati allo sviluppo web, usati come spazio di crescita, documentazione e per fornire un esempio delle mie competenze pratiche in ambito web.",
+      "morePrefix": "Se vuoi un contesto più completo sul mio percorso e sulle mie disponibilità, trovi tutto nella sezione ",
+      "moreLink": "About",
+      "moreSuffix": "."
+    },
+    "dev": {
+      "badge": "Dev",
+      "kicker": "Tecnologie usate",
+      "titlePrefix": "Stack e come lo sto applicando qui; scopri di più in ",
+      "titleLink": "whats here",
+      "titleSuffix": "."
+    },
+    "stack": {
+      "items": {
+        "nuxt": {
+          "title": "Nuxt",
+          "description": "Struttura intuitiva del progetto e navigazione fluida senza ricaricare la pagina: rende lo sviluppo più semplice, ordinato e naturale anche su progetti complessi."
+        },
+        "tailwind": {
+          "title": "Tailwind",
+          "description": "Sistema di stile snello, rapido e uniforme: usa classi leggibili e chiare soprattutto uniformando il modo di lavorare sullo stile tra più persone nello stesso progetto."
+        },
+        "i18n": {
+          "title": "i18n",
+          "description": "Gestione centralizzata delle lingue: testi organizzati in un unico punto e possibilità di attivare facilmente il cambio lingua sulle pagine principali."
+        },
+        "emailjs": {
+          "title": "EmailJS vs n8n",
+          "description": "n8n è più potente e flessibile ma richiede una gestione della struttura, mentre EmailJS è gratuito e integrabile direttamente via JavaScript con la propria email."
+        },
+        "netlify": {
+          "title": "Netlify",
+          "description": "Pubblicazione semplice del sito: collegamento a GitHub, deploy automatico a ogni aggiornamento e hosting gratuito per progetti frontend"
+        },
+        "codex": {
+          "title": "Codex",
+          "description": "Assistente di sviluppo che, se usato con controllo sul codice, permette di aumentare la velocità di programmazione supportando scaffolding, refactoring e organizzazione del progetto."
+        }
+      }
+    },
+    "ops": {
+      "badge": "Ops",
+      "kicker": "Altre competenze",
+      "title": "Strumenti di supporto che uso spesso",
+      "items": {
+        "clickup": {
+          "title": "ClickUp",
+          "description": "Strumento centrale per la gestione delle attività di lavoro: raccolgo e organizzo le task ricevute e condivido task e avanzamenti con altri collaboratori, mantenendo priorità, stato e scadenze sempre sotto controllo."
+        },
+        "figma": {
+          "title": "Figma",
+          "description": "Riferimento operativo per le misure dei layout e design ricevuti, estraendo le specifiche misure dei componenti e, quando necessario, realizzare schemi dei siti, wireframe o layout basici per definire la struttura delle pagine."
+        }
+      }
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Landing page di esempio",
+      "subtitle": "Presentazione iniziale ed elementi"
+    },
+    "cta": {
+      "whatsapp": "Ti piace il mio CV? Scrivimi!"
+    },
+    "services": {
+      "heading": "CARD ESEMPIO",
+      "subheading": "Sottotitolo card esempio",
+      "cards": {
+        "shadowTitle": "Titolo",
+        "webDev": {
+          "line1": "Sviluppo web",
+          "line2": "Personalizzato"
+        },
+        "techAnalysis": {
+          "line1": "Analisi tecnica",
+          "line2": "e miglioramenti"
+        }
+      }
+    },
+    "carousel": {
+      "subtitle": "MI PIACE IL MUSCHIO E I GECHI",
+      "title": "Alcune delle foreste migliori",
+      "shiftHint": "Premi \"shift\" e usa la rotella del mouse per scorrermi Orizontale!"
+    }
+  },
+  "navbar": {
+    "brandAlt": "Portfolio Nuxt",
+    "links": {
+      "home": "Home",
+      "whatsHere": "Cosa trovi qui",
+      "about": "Chi sono",
+      "sample": "Esempio"
+    },
+    "dropdown": {
+      "features": "funzionalità",
+      "items": {
+        "landing": "Landing page",
+        "dashboard": "Dashboard dati",
+        "auth": "Registrazione & accesso",
+        "sample3": "Link Esempio 3"
+      }
+    },
+    "mobile": {
+      "open": "Apri il menu",
+      "close": "Chiudi il menu"
+    },
+    "lang": {
+      "flagIt": "Bandiera italiana",
+      "flagEn": "Bandiera inglese",
+      "ariaToEn": "Passa a inglese",
+      "ariaToIt": "Passa a italiano"
+    }
+  },
+    "fallback": {
+    "badge": "Pagina mancante",
+    "title": "Benvenuto nella pagina di fallback",
+    "body": "Il contenuto che cerchi non esiste, probabilmente hai cliccato un link di esempio del menu.",
+    "counter": "Questa fallback e apparsa {count} volte su questo browser.",
+    "ctaHome": "Torna alla home",
+    "ctaReset": "Azzera contatore",
+    "btsButton": "Dietro le quinte",
+    "btsCaption": "\"Io\" mentre lavoro a questo progetto nei weekend"
+  },
+  "about": {
+    "hero": {
+      "title": "About",
+      "subtitle": "Chi sono e Disponibilità"
+    },
+    "summary": {
+      "title": "Breve Riepilogo",
+      "p1": "Da sempre appassionato di videogame mi sono sempre approcciato al computer come una passione, fino al COVID, dove dato il tempo a disposizione intrapresi un corso di programmazione frontend cambiando così carriera dalle esperienze precedenti.",
+      "p2": "Ho avuto così il piacere di costruire siti web e mettere piede nell'affascinante mondo della programmazione, sia come programmatore frontend sia come, nel tempo, project manager per alcune startup indipendenti.",
+      "p3": "Tristemente i risvolti socioeconomici attuali hanno portato alla fine di quella esperienza da PM soprattutto con l'arrivo di una proposta per un ruolo come help-desk agli uffici IT nella sede di Esselunga, ruolo che copro attualmente.",
+      "p4": "Il mio obiettivo è trovare un'azienda dove poter vedere le mie competenze crescere, in un mondo dove la tecnologia cresce a ritmo esponenziale, e diventare sempre più padrone della capacità di sfruttare questa crescita per creare funzionalità, prodotti e contenuti, (mantenendo allo stesso tempo un equilibrio vita lavoro costruttivo)."
+    },
+    "availability": {
+      "title": "Disponibilità",
+      "p1": "Ovviamente come tutti ho delle preferenze molto precise ma resto aperto e flessibile a valutare qualsiasi proposta.",
+      "summaryTitle": "In sintesi sono disponibile a:",
+      "list": {
+        "fullTime": "Full Time o Part Time",
+        "presence": "Full presenza, ibrido o Full-Remote",
+        "travel": "Disponibilissimo a trasferimenti, disponibile a trasferte",
+        "syncTeam": "Disponibile a lavoro sincrono e/o in squadra",
+        "async": "Disponibile al lavoro asincrono"
+      },
+      "p2": "Resto disponibile a tutte le opzioni sopra elencate, considerando che ritengo di dare il massimo come produttività e soprattutto come qualità in un lavoro full-remote, compreso fra le 30 e le 32 ore, parzialmente sincrono e/o in squadra e parzialmente asincrono tramite il completamento di task.",
+      "p3": "Resto consapevole in ogni caso che i primi periodi di lavoro siano full presenza al fine di una valutazione delle risorse che porto."
+    },
+    "details": {
+      "title": "Dettagli",
+      "items": {
+        "vat": "Possiedo partita IVA italiana",
+        "licenses": "Patente A e B"
+      }
+    },
+    "languages": {
+      "title": "Lingue",
+      "items": {
+        "it": "Italiano - Madrelingua",
+        "en": "Inglese - C1 (unofficial)",
+        "es": "Spagnolo - A2 (unofficial)",
+        "jp": "Giapponese - Wannabe"
+      }
+    }
   }
 }

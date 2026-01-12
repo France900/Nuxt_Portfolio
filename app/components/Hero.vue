@@ -22,6 +22,7 @@
                 Francesco Emanuele Livio
             </h1>
             <h2 class="mt-2 text-xl text-slate-300">Online Portfolio &amp; More</h2>
+            <h2 class="mt-2 text-xl text-slate-300">Frontend Developer Junior-mid</h2>
         </div>
     </section>
 </template>

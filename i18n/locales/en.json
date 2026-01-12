@@ -1,4 +1,4 @@
-{
+﻿{
   "firstVisitBanner": {
     "badge": "Please note",
     "title": "Welcome - Portfolio under construction",
@@ -6,5 +6,184 @@
     "autoClose": "Closes automatically in {seconds}s",
     "closeAria": "Dismiss alert",
     "cta": "Got it"
+  },
+  "temporary": {
+    "underDevelopment": "Still in development"
+  },
+  "home": {
+    "repo": {
+      "textBeforeLink": "To explore the GitHub repository for this site, follow this ",
+      "linkLabel": "link",
+      "textAfterLink": ".",
+      "privacy": "This site is intentionally not indexed for privacy."
+    },
+    "intro": {
+      "avatarAlt": "Avatar",
+      "paragraph1": "Hi, my name is Francesco and I have been working in IT for over 5 years, in different roles and on a variety of activities, from technical work to personal projects.",
+      "paragraph2": "This site collects experiments, studies, and work related to web development, used as a space for growth, documentation, and to provide an example of my practical skills in the web field.",
+      "morePrefix": "If you want more context about my journey and availability, you can find everything in the ",
+      "moreLink": "About",
+      "moreSuffix": " section."
+    },
+    "dev": {
+      "badge": "Dev",
+      "kicker": "Technologies used",
+      "titlePrefix": "Stack and how I am applying it here; learn more in ",
+      "titleLink": "whats here",
+      "titleSuffix": "."
+    },
+    "stack": {
+      "items": {
+        "nuxt": {
+          "title": "Nuxt",
+          "description": "Intuitive project structure and smooth navigation without page reloads: it makes development simpler, cleaner, and more natural even on complex projects."
+        },
+        "tailwind": {
+          "title": "Tailwind",
+          "description": "Lean, fast, and consistent styling system: it uses readable classes and keeps the styling workflow uniform across the team."
+        },
+        "i18n": {
+          "title": "i18n",
+          "description": "Centralized language management: text organized in one place and easy language switching on main pages."
+        },
+        "emailjs": {
+          "title": "EmailJS vs n8n",
+          "description": "n8n is more powerful and flexible but requires managing its structure, while EmailJS is free and can be integrated directly via JavaScript with your email."
+        },
+        "netlify": {
+          "title": "Netlify",
+          "description": "Simple site publishing: GitHub connection, automatic deploys on every update, and free hosting for frontend projects."
+        },
+        "codex": {
+          "title": "Codex",
+          "description": "Development assistant that, when used with code oversight, speeds up programming by supporting scaffolding, refactoring, and project organization."
+        }
+      }
+    },
+    "ops": {
+      "badge": "Ops",
+      "kicker": "Other skills",
+      "title": "Support tools I use often",
+      "items": {
+        "clickup": {
+          "title": "ClickUp",
+          "description": "Core tool for managing work activities: I collect and organize tasks and share updates with collaborators, keeping priorities, status, and deadlines under control."
+        },
+        "figma": {
+          "title": "Figma",
+          "description": "Operational reference for layout measurements and received designs, extracting component specs and, when needed, creating site schemas, wireframes, or basic layouts to define page structure."
+        }
+      }
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Landing page example",
+      "subtitle": "Initial presentation and elements"
+    },
+    "cta": {
+      "whatsapp": "Like my CV? Write me!"
+    },
+    "services": {
+      "heading": "SAMPLE CARDS",
+      "subheading": "Sample cards subtitle",
+      "cards": {
+        "shadowTitle": "Title",
+        "webDev": {
+          "line1": "Web development",
+          "line2": "Custom"
+        },
+        "techAnalysis": {
+          "line1": "Technical analysis",
+          "line2": "and improvements"
+        }
+      }
+    },
+    "carousel": {
+      "subtitle": "I LIKE MOSS AND GECKOS",
+      "title": "Some Best Forests",
+      "shiftHint": "Press \"shift\" and use the mouse wheel to scroll horizontally!"
+    }
+  },
+  "navbar": {
+    "brandAlt": "Nuxt Portfolio",
+    "links": {
+      "home": "Home",
+      "whatsHere": "Whats here",
+      "about": "About",
+      "sample": "Sample"
+    },
+    "dropdown": {
+      "features": "Features",
+      "items": {
+        "landing": "Landing",
+        "dashboard": "Data dashboard",
+        "auth": "Registration & login",
+        "sample3": "Sample link 3"
+      }
+    },
+    "mobile": {
+      "open": "Open menu",
+      "close": "Close menu"
+    },
+    "lang": {
+      "flagIt": "Italian flag",
+      "flagEn": "English flag",
+      "ariaToEn": "Switch to English",
+      "ariaToIt": "Switch to Italian"
+    }
+  },
+    "fallback": {
+    "badge": "Missing page",
+    "title": "Welcome to the fallback page",
+    "body": "The content you are looking for does not exist, you probably clicked a sample link from the menu.",
+    "counter": "This fallback has appeared {count} times on this browser.",
+    "ctaHome": "Back to home",
+    "ctaReset": "Reset counter",
+    "btsButton": "Behind the scenes",
+    "btsCaption": "\"Me\" working on this project during the weekends"
+  },
+  "about": {
+    "hero": {
+      "title": "About",
+      "subtitle": "Who I am and availability"
+    },
+    "summary": {
+      "title": "Brief summary",
+      "p1": "Always passionate about video games, I approached the computer as a hobby, until COVID, when I took a frontend programming course and changed career from my previous experiences.",
+      "p2": "I had the pleasure of building websites and stepping into the fascinating world of programming, both as a frontend developer and, over time, as a project manager for some independent startups.",
+      "p3": "Unfortunately, the current socioeconomic climate led to the end of that PM experience, especially with the arrival of an offer for a help-desk role in the IT offices at the Esselunga headquarters, a role I currently cover.",
+      "p4": "My goal is to find a company where I can see my skills grow, in a world where technology grows exponentially, and to become more and more able to leverage that growth to create features, products, and content, while also maintaining a constructive work-life balance."
+    },
+    "availability": {
+      "title": "Availability",
+      "p1": "Like everyone, I have some clear preferences, but I remain open and flexible to evaluate any proposal.",
+      "summaryTitle": "In summary, I am available for:",
+      "list": {
+        "fullTime": "Full-time or part-time",
+        "presence": "On-site, hybrid, or full-remote",
+        "travel": "Very open to relocations and business trips",
+        "syncTeam": "Synchronous work and/or teamwork",
+        "async": "Asynchronous work"
+      },
+      "p2": "I remain open to all the options listed above, considering that I perform at my best, especially in terms of productivity and quality, in a full-remote role between 30 and 32 hours, partly synchronous and/or team-based and partly asynchronous through task completion.",
+      "p3": "I am also aware that the first periods of work may be fully on-site in order to evaluate the resources I bring."
+    },
+    "details": {
+      "title": "Details",
+      "items": {
+        "vat": "I have an Italian VAT number",
+        "licenses": "Driver's license A and B"
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "items": {
+        "it": "Italian - Native",
+        "en": "English - C1 (unofficial)",
+        "es": "Spanish - A2 (unofficial)",
+        "jp": "Japanese - Wannabe"
+      }
+    }
   }
 }
