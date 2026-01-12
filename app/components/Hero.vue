@@ -11,7 +11,8 @@
 
         <!-- overlay -->
         <div class="absolute inset-0 bg-black/30 z-[1]" />
-        <div class="absolute top-0 left-0 w-full h-[35%] bg-[linear-gradient(rgba(0,0,0,0.4)_0%,rgba(0,0,0,0)_50%)]"></div>
+        <div class="absolute top-0 left-0 w-full h-[35%] bg-[linear-gradient(rgba(0,0,0,0.4)_0%,rgba(0,0,0,0)_50%)]">
+        </div>
         <!-- mask decor bottom right -->
         <div
             class="pointer-events-none absolute bottom-0 right-0 z-[2] h-[100%] w-[80%] bg-[url('/Mask.png')] bg-contain bg-no-repeat bg-right-bottom m-8" />
@@ -22,7 +23,8 @@
                 Francesco Emanuele Livio
             </h1>
             <h2 class="mt-2 text-xl text-slate-300">Online Portfolio &amp; More</h2>
-            <h2 class="mt-2 text-xl text-slate-300">Frontend Developer Junior-mid</h2>
+            <!--<h2 class="mt-2 text-xl text-slate-300">Web Developer Front-End Junior</h2> -->
+            <!-- <h2 class="mt-2 text-xl text-slate-300">{{ $t('home.hero.role') }}</h2> -->
         </div>
     </section>
 </template>
