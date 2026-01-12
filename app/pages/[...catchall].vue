@@ -1,25 +1,25 @@
-<template>
+﻿<template>
   <div class="flex items-center justify-center bg-slate-950 py-12 text-slate-100">
     <div class="space-y-4 text-center">
 
       <!-- Messaggio e contatore della pagina di fallback -->
-      <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Pagina mancante</p>
-      <h1 class="text-3xl font-semibold">Benvenuto nella pagina di fallback</h1>
+      <p class="text-sm uppercase tracking-[0.2em] text-slate-400">{{ t('fallback.badge') }}</p>
+      <h1 class="text-3xl font-semibold">{{ t('fallback.title') }}</h1>
       <p class="text-slate-300">
-        Il contenuto che cerchi non esiste, probabilmente hai cliccato un link di esempio del menu.
+        {{ t('fallback.body') }}
       </p>
-      <p class="text-sm text-slate-400">Questa fallback e apparsa {{ count }} volte su questo browser.</p>
+      <p class="text-sm text-slate-400">{{ t('fallback.counter', { count }) }}</p>
 
       <!-- CTA principali: torna alla home o azzera il contatore -->
       <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
         <NuxtLink to="/"
           class="inline-flex items-center gap-2 rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400">
-          Torna alla home
+          {{ t('fallback.ctaHome') }}
         </NuxtLink>
         <button
           class="inline-flex items-center gap-2 rounded-md border border-slate-700 px-4 py-2 text-sm font-medium text-slate-100 transition hover:border-slate-600 hover:bg-slate-800/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-500"
           type="button" @click="resetCounter">
-          Azzera contatore
+          {{ t('fallback.ctaReset') }}
         </button>
       </div>
 
@@ -35,10 +35,10 @@
           class="text-sm uppercase tracking-[0.2em] text-slate-800 transition hover:text-slate-200"
           @click="showEasterEgg = true"
         >
-          Behind the scenes
+          {{ t('fallback.btsButton') }}
         </button>
         <div v-if="showEasterEgg" class="space-y-2">
-          <p class="text-sm font-semibold text-slate-200">"Me" working on this project during the weekends</p>
+          <p class="text-sm font-semibold text-slate-200">{{ t('fallback.btsCaption') }}</p>
           <video autoplay muted loop class="w-full md:max-w-[50%] md:mx-auto rounded-3xl">
             <source src="/video/Allmighty.mp4" type="video/mp4" />
           </video>
@@ -56,6 +56,7 @@ import { useRoute } from 'vue-router'
 
 const count = ref(0)
 const route = useRoute()
+const { t } = useI18n()
 const STORAGE_KEY = 'fallbackVisitCount'
 const showEasterEgg = ref(false)
 
@@ -80,3 +81,5 @@ function resetCounter() {
   localStorage.removeItem(STORAGE_KEY)
 }
 </script>
+
+

@@ -27,7 +27,7 @@
       "kicker": "Technologies used",
       "titlePrefix": "Stack and how I am applying it here; learn more in ",
       "titleLink": "whats here",
-      "titleSuffix": ""
+      "titleSuffix": "."
     },
     "stack": {
       "items": {
@@ -73,6 +73,16 @@
       }
     }
   },
+    "fallback": {
+    "badge": "Missing page",
+    "title": "Welcome to the fallback page",
+    "body": "The content you are looking for does not exist, you probably clicked a sample link from the menu.",
+    "counter": "This fallback has appeared {count} times on this browser.",
+    "ctaHome": "Back to home",
+    "ctaReset": "Reset counter",
+    "btsButton": "Behind the scenes",
+    "btsCaption": "\"Me\" working on this project during the weekends"
+  },
   "about": {
     "hero": {
       "title": "About",
@@ -117,3 +127,5 @@
     }
   }
 }
+
+
