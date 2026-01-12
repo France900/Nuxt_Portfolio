@@ -11,6 +11,9 @@
     "underDevelopment": "Ancora in sviluppo"
   },
   "home": {
+    "hero": {
+      "role": "Attualmente alla ricerca di un ruolo junior front-end per consolidare l'esperienza di produzione"
+    },
     "repo": {
       "textBeforeLink": "Per esplorare la Repository GitHub di questo sito segui pure questo ",
       "linkLabel": "link",
