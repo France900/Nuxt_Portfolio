@@ -20,25 +20,22 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { computed } from 'vue'
 
 const emit = defineEmits(['toggle'])
 
-const isItalian = ref(true)
-
-onMounted(() => {
-  const lang = (navigator.languages && navigator.languages[0]) || navigator.language || ''
-  isItalian.value = lang.toLowerCase().startsWith('it')
-})
+const { locale, setLocale } = useI18n()
+const isItalian = computed(() => locale.value === 'it')
 
 const flagSrc = computed(() => (isItalian.value ? '/Italy.svg' : '/UK.svg'))
 const flagAlt = computed(() => (isItalian.value ? 'Bandiera italiana' : 'Bandiera inglese'))
 const ariaLabel = computed(() =>
-  isItalian.value ? 'Mostra bandiera inglese' : 'Mostra bandiera italiana'
+  isItalian.value ? 'Passa a inglese' : 'Passa a italiano'
 )
 
-const onToggle = () => {
-  isItalian.value = !isItalian.value
-  emit('toggle')
+const onToggle = async () => {
+  const nextLocale = isItalian.value ? 'en' : 'it'
+  await setLocale(nextLocale)
+  emit('toggle', nextLocale)
 }
 </script>
