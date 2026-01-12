@@ -1,6 +1,6 @@
 ﻿<template>
   <!-- Wrapper del form con styling coerente con il tema -->
-  <section class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
+  <section class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 mt-12">
     <!-- Titolo e microcopy introduttivo -->
     <div class="space-y-1">
       <h3 class="text-xl font-semibold text-white">Contattami</h3>
