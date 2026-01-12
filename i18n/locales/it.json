@@ -73,6 +73,63 @@
       }
     }
   },
+  "landing": {
+    "hero": {
+      "title": "Landing page di esempio",
+      "subtitle": "Presentazione iniziale ed elementi"
+    },
+    "cta": {
+      "whatsapp": "Ti piace il mio CV? Scrivimi!"
+    },
+    "services": {
+      "heading": "CARD ESEMPIO",
+      "subheading": "Sottotitolo card esempio",
+      "cards": {
+        "shadowTitle": "Titolo",
+        "webDev": {
+          "line1": "Sviluppo web",
+          "line2": "Personalizzato"
+        },
+        "techAnalysis": {
+          "line1": "Analisi tecnica",
+          "line2": "e miglioramenti"
+        }
+      }
+    },
+    "carousel": {
+      "subtitle": "MI PIACE IL MUSCHIO E I GECHI",
+      "title": "Alcune delle foreste migliori",
+      "shiftHint": "Premi \"shift\" e usa la rotella del mouse per scorrermi Orizontale!"
+    }
+  },
+  "navbar": {
+    "brandAlt": "Portfolio Nuxt",
+    "links": {
+      "home": "Home",
+      "whatsHere": "Cosa trovi qui",
+      "about": "Chi sono",
+      "sample": "Esempio"
+    },
+    "dropdown": {
+      "features": "funzionalità",
+      "items": {
+        "landing": "Landing page",
+        "dashboard": "Dashboard dati",
+        "auth": "Registrazione & accesso",
+        "sample3": "Link Esempio 3"
+      }
+    },
+    "mobile": {
+      "open": "Apri il menu",
+      "close": "Chiudi il menu"
+    },
+    "lang": {
+      "flagIt": "Bandiera italiana",
+      "flagEn": "Bandiera inglese",
+      "ariaToEn": "Passa a inglese",
+      "ariaToIt": "Passa a italiano"
+    }
+  },
     "fallback": {
     "badge": "Pagina mancante",
     "title": "Benvenuto nella pagina di fallback",
@@ -127,5 +184,3 @@
     }
   }
 }
-
-

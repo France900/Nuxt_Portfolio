@@ -73,6 +73,63 @@
       }
     }
   },
+  "landing": {
+    "hero": {
+      "title": "Landing page example",
+      "subtitle": "Initial presentation and elements"
+    },
+    "cta": {
+      "whatsapp": "Like my CV? Write me!"
+    },
+    "services": {
+      "heading": "SAMPLE CARDS",
+      "subheading": "Sample cards subtitle",
+      "cards": {
+        "shadowTitle": "Title",
+        "webDev": {
+          "line1": "Web development",
+          "line2": "Custom"
+        },
+        "techAnalysis": {
+          "line1": "Technical analysis",
+          "line2": "and improvements"
+        }
+      }
+    },
+    "carousel": {
+      "subtitle": "I LIKE MOSS AND GECKOS",
+      "title": "Some Best Forests",
+      "shiftHint": "Press \"shift\" and use the mouse wheel to scroll horizontally!"
+    }
+  },
+  "navbar": {
+    "brandAlt": "Nuxt Portfolio",
+    "links": {
+      "home": "Home",
+      "whatsHere": "Whats here",
+      "about": "About",
+      "sample": "Sample"
+    },
+    "dropdown": {
+      "features": "Features",
+      "items": {
+        "landing": "Landing",
+        "dashboard": "Data dashboard",
+        "auth": "Registration & login",
+        "sample3": "Sample link 3"
+      }
+    },
+    "mobile": {
+      "open": "Open menu",
+      "close": "Close menu"
+    },
+    "lang": {
+      "flagIt": "Italian flag",
+      "flagEn": "English flag",
+      "ariaToEn": "Switch to English",
+      "ariaToIt": "Switch to Italian"
+    }
+  },
     "fallback": {
     "badge": "Missing page",
     "title": "Welcome to the fallback page",
@@ -127,5 +184,4 @@
     }
   }
 }
-
 

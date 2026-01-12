@@ -3,7 +3,7 @@
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
       <!-- Brand -->
       <NuxtLink to="/" class="flex items-center gap-3">
-        <img src="/logo_navbar.png" alt="Nuxt Portfolio" class="h-8 w-auto" />
+        <img src="/logo_navbar.png" :alt="t('navbar.brandAlt')" class="h-8 w-auto" />
       </NuxtLink>
 
       <!-- Mobile toggles -->
@@ -35,33 +35,35 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import MobileToggleCross from './navbar/MobileToggleCross.vue'
 import Tendina_props from './navbar/Tendina_props.vue';
 import LangSwitch from './navbar/LangSwitch.vue';
 
+const { t } = useI18n()
+
 // First block of links rendered before the dropdown
-const navLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/whats-here', label: 'Whats here' },
-]
+const navLinks = computed(() => [
+  { to: '/', label: t('navbar.links.home') },
+  { to: '/whats-here', label: t('navbar.links.whatsHere') },
+])
 
 // Dropdown payload rendered inline between navLinks and navLinks2
-const propsMenu1 = {
-  title: 'Features',
+const propsMenu1 = computed(() => ({
+  title: t('navbar.dropdown.features'),
   items: [
-    { to: '/landing', label: 'Landing' },
-    { to: '/dashboard-dati', label: 'Dashboard dati' },
-    { to: '/login', label: 'Registrazione & login' },
-    { to: '/propSample3', label: 'Link Esempio 3' }
+    { to: '/landing', label: t('navbar.dropdown.items.landing') },
+    { to: '/dashboard-dati', label: t('navbar.dropdown.items.dashboard') },
+    { to: '/login', label: t('navbar.dropdown.items.auth') },
+    { to: '/propSample3', label: t('navbar.dropdown.items.sample3') }
   ]
-}
+}))
 
 // Second block of links rendered after the dropdown
-const navLinks2 = [
-  { to: '/about', label: 'About' },
-  { to: '/sample', label: 'Sample' }
-]
+const navLinks2 = computed(() => [
+  { to: '/about', label: t('navbar.links.about') },
+  { to: '/sample', label: t('navbar.links.sample') }
+])
 
 const isOpen = ref(false)
 // Toggle state for the mobile menu

@@ -24,13 +24,13 @@ import { computed } from 'vue'
 
 const emit = defineEmits(['toggle'])
 
-const { locale, setLocale } = useI18n()
+const { locale, setLocale, t } = useI18n()
 const isItalian = computed(() => locale.value === 'it')
 
 const flagSrc = computed(() => (isItalian.value ? '/Italy.svg' : '/UK.svg'))
-const flagAlt = computed(() => (isItalian.value ? 'Bandiera italiana' : 'Bandiera inglese'))
+const flagAlt = computed(() => (isItalian.value ? t('navbar.lang.flagIt') : t('navbar.lang.flagEn')))
 const ariaLabel = computed(() =>
-  isItalian.value ? 'Passa a inglese' : 'Passa a italiano'
+  isItalian.value ? t('navbar.lang.ariaToEn') : t('navbar.lang.ariaToIt')
 )
 
 const onToggle = async () => {

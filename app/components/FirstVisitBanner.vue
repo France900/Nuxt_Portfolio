@@ -18,7 +18,8 @@
 
         <!-- Contenitore principale del messaggio di benvenuto -->
         <div class="relative w-full max-w-xl overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/95 shadow-2xl shadow-blue-900/30">
-          <div class="flex items-start gap-4 p-6">
+          <div class="flex items-start md:flex-row flex-col gap-4 p-6">
+            
             <!-- Icona che evidenzia l'informazione -->
             <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/15 text-blue-300">
               <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -41,7 +42,7 @@
             <!-- Pulsante chiusura immediata -->
             <button
               type="button"
-              class="rounded-full p-2 text-slate-400 transition hover:bg-slate-800 hover:text-white"
+              class="rounded-full p-2 text-slate-400 transition hover:bg-slate-800 hover:text-white md:block hidden"
               :aria-label="t('firstVisitBanner.closeAria')"
               @click="dismiss('button')"
             >
