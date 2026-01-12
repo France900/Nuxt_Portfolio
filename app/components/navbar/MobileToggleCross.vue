@@ -16,17 +16,21 @@
   </button>
 </template>
 
-<script setup lang="ts">
-const props = defineProps<{
-  open: boolean
-  ariaControls?: string
-}>()
+<script setup>
+const props = defineProps({
+  open: {
+    type: Boolean,
+    required: true,
+  },
+  ariaControls: {
+    type: String,
+    default: undefined,
+  },
+})
 
-defineEmits<{
-  toggle: []
-}>()
+defineEmits(['toggle'])
 
-const lineClasses = (line: 'line1' | 'line2' | 'line3') => [line, 'divLinea', { active: props.open }]
+const lineClasses = (line) => [line, 'divLinea', { active: props.open }]
 </script>
 
 <style scoped>

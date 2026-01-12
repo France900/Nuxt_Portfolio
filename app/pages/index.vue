@@ -18,7 +18,7 @@
     <section class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 lg:p-10">
       <div class="flex flex-col gap-6 lg:flex-row lg:items-start">
         <div class="shrink-0">
-          <img src="/avatar_placeholder.jpg" alt="Avatar placeholder"
+          <img src="/avatar.png" alt="Avatar placeholder"
             class="h-40 w-40 rounded-2xl object-cover ring-1 ring-slate-800" />
         </div>
         <div class="space-y-4 text-slate-300">
@@ -95,8 +95,7 @@
             </div>
             <h4 class="text-lg font-semibold text-white">ClickUp</h4>
           </div>
-          <p class="text-slate-300">Usato come PM per startup: roadmap, backlog grooming, automazioni per ticket e
-            monitoraggio dei KPI di delivery.</p>
+          <p class="text-slate-300">Strumento centrale per la gestione delle attività di lavoro: raccolgo e organizzo le task ricevute e condivido task e avanzamenti con altri collaboratori, mantenendo priorità, stato e scadenze sempre sotto controllo.</p>
         </div>
         <!-- Card: Figma -->
         <div class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
@@ -105,8 +104,7 @@
             </div>
             <h4 class="text-lg font-semibold text-white">Figma</h4>
           </div>
-          <p class="text-slate-300">Wireframe e handoff: traccio layout o seguo i design ricevuti, importo componenti e
-            li traduco in UI aderenti.</p>
+          <p class="text-slate-300">Riferimento operativo per le misure dei layout e design ricevuti, estraendo le specifiche misure dei componenti e, quando necessario, realizzare schemi dei siti, wireframe o layout basici per definire la struttura delle pagine.</p>
         </div>
       </div>
     </div>

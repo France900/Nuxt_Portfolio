@@ -3,7 +3,7 @@
   <section class="space-y-8">
     <!-- Hero compatto con titolo e sottotitolo della pagina -->
     <MiniHero title="Whats here" subtitle="Panoramica di cosa puoi trovare qui" />
-
+    <h3 class="text-xl font-semibold text-red-800">Ancora in sviluppo</h3>
     <!-- Sezione UI: componenti/elementi riutilizzabili presenti in homepage -->
     <div class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/60 p-6">
       <!-- Intestazione di sezione con badge e descrizione -->

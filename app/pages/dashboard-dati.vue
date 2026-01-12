@@ -38,23 +38,19 @@ const apiCards = [
   <section class="space-y-8">
     <div class="flex items-center justify-between">
       <div>
+        <h3 class="text-xl font-semibold text-red-800">Ancora in sviluppo</h3>
         <h1 class="text-3xl font-semibold tracking-tight text-white">Dashboard dati</h1>
         <p class="text-slate-300">Spazio per visualizzazioni e metriche.</p>
       </div>
-      <button
-        type="button"
-        class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-blue-500"
-      >
+      <button type="button"
+        class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-blue-500">
         Aggiorna dati
       </button>
     </div>
 
     <div class="grid gap-4 md:grid-cols-3">
-      <div
-        v-for="filter in filters"
-        :key="filter.label"
-        class="rounded-xl border border-slate-800 bg-slate-900/70 p-4 shadow"
-      >
+      <div v-for="filter in filters" :key="filter.label"
+        class="rounded-xl border border-slate-800 bg-slate-900/70 p-4 shadow">
         <p class="text-sm text-slate-400">{{ filter.label }}</p>
         <p class="text-lg font-semibold text-white">{{ filter.value }}</p>
         <div class="mt-3 flex gap-2 text-sm">
@@ -79,16 +75,10 @@ const apiCards = [
         </div>
       </div>
       <div class="grid grid-cols-7 gap-3">
-        <div
-          v-for="point in chartData"
-          :key="point.label"
-          class="flex flex-col items-center gap-2"
-        >
+        <div v-for="point in chartData" :key="point.label" class="flex flex-col items-center gap-2">
           <div class="flex h-40 w-full items-end rounded-md bg-slate-800/70 p-1">
-            <div
-              class="w-full rounded-sm bg-gradient-to-t from-blue-600 to-cyan-400 transition-all"
-              :style="{ height: `${point.value}%` }"
-            />
+            <div class="w-full rounded-sm bg-gradient-to-t from-blue-600 to-cyan-400 transition-all"
+              :style="{ height: `${point.value}%` }" />
           </div>
           <span class="text-xs text-slate-400">{{ point.label }}</span>
         </div>
@@ -106,11 +96,7 @@ const apiCards = [
         </button>
       </div>
       <div class="grid gap-4 md:grid-cols-3">
-        <div
-          v-for="api in apiCards"
-          :key="api.title"
-          class="rounded-xl border border-slate-800 bg-slate-900/60 p-4"
-        >
+        <div v-for="api in apiCards" :key="api.title" class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
           <p class="text-sm text-blue-400">{{ api.status }}</p>
           <h4 class="mt-1 text-lg font-semibold text-white">{{ api.title }}</h4>
           <p class="mt-2 text-sm text-slate-300">{{ api.description }}</p>
