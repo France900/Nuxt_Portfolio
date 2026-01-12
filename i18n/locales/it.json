@@ -7,6 +7,9 @@
     "closeAria": "Chiudi avviso",
     "cta": "Ok, ho capito"
   },
+  "temporary": {
+    "underDevelopment": "Ancora in sviluppo"
+  },
   "home": {
     "repo": {
       "textBeforeLink": "Per esplorare la Repository GitHub di questo sito segui pure questo ",

@@ -1,4 +1,6 @@
 <script setup>
+const { t } = useI18n()
+
 const filters = [
   { label: 'Periodo', value: 'Ultimi 30 giorni' },
   { label: 'Categoria', value: 'Tutte' },
@@ -38,7 +40,7 @@ const apiCards = [
   <section class="space-y-8">
     <div class="flex items-center justify-between">
       <div>
-        <h3 class="text-xl font-semibold text-red-800">Ancora in sviluppo</h3>
+        <h3 class="text-xl font-semibold text-red-800">{{ t('temporary.underDevelopment') }}</h3>
         <h1 class="text-3xl font-semibold tracking-tight text-white">Dashboard dati</h1>
         <p class="text-slate-300">Spazio per visualizzazioni e metriche.</p>
       </div>

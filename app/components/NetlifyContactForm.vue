@@ -3,7 +3,7 @@
   <section class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 mt-12">
     <!-- Titolo e microcopy introduttivo -->
     <div class="space-y-1">
-      <h3 class="text-xl font-semibold text-red-800">Ancora in sviluppo</h3>
+      <h3 class="text-xl font-semibold text-red-800">{{ t('temporary.underDevelopment') }}</h3>
       <h3 class="text-xl font-semibold text-white">Contattami</h3>
       <p class="text-sm text-slate-300">Compila il form e ti rispondo appena possibile.</p>
     </div>
@@ -76,6 +76,7 @@
 
 <script setup>
 // Ref al nodo form per leggere i campi e inviarli via fetch
+const { t } = useI18n()
 const formRef = ref(null)
 const status = ref('idle')
 

@@ -7,6 +7,9 @@
     "closeAria": "Dismiss alert",
     "cta": "Got it"
   },
+  "temporary": {
+    "underDevelopment": "Still in development"
+  },
   "home": {
     "repo": {
       "textBeforeLink": "To explore the GitHub repository for this site, follow this ",
@@ -184,4 +187,3 @@
     }
   }
 }
-
