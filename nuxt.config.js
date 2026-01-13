@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+﻿// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -14,9 +14,16 @@ export default defineNuxtConfig({
       { code: 'it', name: 'Italiano', file: 'it.json' },
       { code: 'en', name: 'English', file: 'en.json' }
     ],
-    defaultLocale: 'it',
+    defaultLocale: 'en',
+    fallbackLocale: 'en',
     strategy: 'no_prefix',
     langDir: 'locales',
-    detectBrowserLanguage: false
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    }
   }
 })
+
+
