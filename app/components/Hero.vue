@@ -23,7 +23,7 @@
                 Francesco Emanuele Livio
             </h1>
             <h2 class="mt-2 text-xl text-slate-300">Online Portfolio &amp; More</h2>
-            <!--<h2 class="mt-2 text-xl text-slate-300">Web Developer Front-End Junior</h2> -->
+            <!--<h2 class="mt-2 text-xl text-slate-300">Web Developer Front-End Early-Mid</h2> -->
             <!-- <h2 class="mt-2 text-xl text-slate-300">{{ $t('home.hero.role') }}</h2> -->
         </div>
     </section>

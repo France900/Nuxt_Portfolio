@@ -8,20 +8,30 @@
         {{ t('home.repo.textBeforeLink') }}
         <NuxtLink to="https://github.com/France900/Nuxt_Portfolio" class="text-blue-400 underline hover:text-blue-300">
           {{ t('home.repo.linkLabel') }}
-        </NuxtLink>{{ t('home.repo.textAfterLink') }}
+        </NuxtLink>.
       </p>
       <p class="text-sm text-slate-500">{{ t('home.repo.privacy') }}</p>
     </div>
+
+    <!-- Altri lavori -->
+    <p class="text-slate-300">
+      Ulteriori siti da me realizzati:
+      <br>
+      Sito realizato per un professionista in psicologia in VUE "<NuxtLink
+        to="https://sito-giuseppe-marchi.netlify.app/">Giuseppe Marchi</NuxtLink>" con la repo a questo
+      <NuxtLink to="https://github.com/France900/Sito_Giuseppe_Marchi"
+        class="text-blue-400 underline hover:text-blue-300">
+        {{ t('home.repo.linkLabel') }}
+      </NuxtLink>.
+      Vecchio sito Gecko Developers realizato in react e recisionato: Coming soon
+    </p>
 
     <!-- Intro -->
     <section class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 lg:p-10">
       <div class="flex flex-col gap-6 lg:flex-row lg:items-start">
         <div class="shrink-0">
-          <img
-            src="/avatar.png"
-            :alt="t('home.intro.avatarAlt')"
-            class="h-40 w-40 rounded-2xl object-cover ring-1 ring-slate-800"
-          />
+          <img src="/avatar.png" :alt="t('home.intro.avatarAlt')"
+            class="h-40 w-40 rounded-2xl object-cover ring-1 ring-slate-800" />
         </div>
         <div class="space-y-4 text-slate-300">
           <p>
@@ -45,8 +55,7 @@
       <!-- Intestazione e descrizione -->
       <div class="flex items-center gap-3">
         <div
-          class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-emerald-300 font-semibold"
-        >
+          class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-800 text-emerald-300 font-semibold">
           {{ t('home.dev.badge') }}
         </div>
         <div>
@@ -55,18 +64,15 @@
             {{ t('home.dev.titlePrefix') }}
             <NuxtLink to="/whats-here" class="text-blue-400 underline hover:text-blue-300">
               {{ t('home.dev.titleLink') }}
-            </NuxtLink>{{ t('home.dev.titleSuffix') }}
+            </NuxtLink>.
           </h3>
         </div>
       </div>
 
       <!-- Griglia di card: tecnologia + note di utilizzo -->
       <div class="grid gap-4 md:grid-cols-2">
-        <div
-          v-for="(item, index) in stackItems"
-          :key="index"
-          class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4"
-        >
+        <div v-for="(item, index) in stackItems" :key="index"
+          class="space-y-2 rounded-xl border border-slate-800/80 bg-slate-900/60 p-4">
           <div class="flex items-center gap-2">
             <div class="flex h-9 w-9 items-center justify-center rounded-md font-bold" :class="item.classes">
               {{ item.badge }}
