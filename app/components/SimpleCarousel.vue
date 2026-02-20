@@ -6,17 +6,10 @@
     </h2>
 
     <article class="relative flex gap-2 lg:gap-6 overflow-x-auto py-2.5 lg:py-10 snap-x snap-mandatory max-w-full">
-      <div
-        v-for="(image, index) in heroImages"
-        :key="index"
-        class="snap-center shrink-0"
-      >
-        <img
-          :src="image"
-          alt="Hero carousel item"
+      <div v-for="(image, index) in heroImages" :key="index" class="snap-center shrink-0">
+        <img :src="image" alt="Hero carousel item"
           class="w-72 h-48 lg:w-80 lg:h-56 rounded-2xl object-cover shadow-lg cursor-pointer transition hover:opacity-90"
-          @click="openLightbox(index)"
-        />
+          @click="openLightbox(index)" />
       </div>
     </article>
     <p class="max-lg:hidden pt-2">
@@ -25,42 +18,26 @@
 
     <!-- Lightbox overlay -->
     <transition name="fade">
-      <div
-        v-if="lightboxOpen"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
-        role="dialog"
-        aria-modal="true"
-      >
-        <button
-          type="button"
+      <div v-if="lightboxOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" role="dialog"
+        aria-modal="true">
+        <button type="button"
           class="absolute right-6 top-6 rounded-full bg-slate-900/80 p-3 text-white shadow-lg transition hover:bg-slate-800"
-          aria-label="Chiudi"
-          @click="closeLightbox"
-        >
+          aria-label="Chiudi" @click="closeLightbox">
           ✕
         </button>
 
-        <button
-          type="button"
+        <button type="button"
           class="hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-slate-900/80 p-3 text-white shadow-lg transition hover:bg-slate-800"
-          aria-label="Immagine precedente"
-          @click="prevImage"
-        >
+          aria-label="Immagine precedente" @click="prevImage">
           ‹
         </button>
 
-        <img
-          :src="heroImages[activeIndex]"
-          alt="Immagine ingrandita"
-          class="max-h-[80vh] max-w-[90vw] rounded-2xl object-contain shadow-2xl border border-slate-800"
-        />
+        <img :src="heroImages[activeIndex]" alt="Immagine ingrandita"
+          class="max-h-[80vh] w-[90vw] rounded-2xl object-contain shadow-2xl border border-slate-800" />
 
-        <button
-          type="button"
+        <button type="button"
           class="hidden lg:flex absolute right-6 top-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-slate-900/80 p-3 text-white shadow-lg transition hover:bg-slate-800"
-          aria-label="Immagine successiva"
-          @click="nextImage"
-        >
+          aria-label="Immagine successiva" @click="nextImage">
           ›
         </button>
       </div>
@@ -77,7 +54,11 @@ const heroImages = [
   '/mossyRiverInAForest1.png',
   '/mossyRiverInAForest2.png',
   '/mossyRiverInAForest3.png',
-  '/mossyRiverInAForest4.png'
+  '/mossyRiverInAForest4.png',
+  '/img_lights_wide.jpg',
+  '/img_nature_wide.jpg',
+  '/img_snow_wide.jpg',
+  '/img_mountains_wide.jpg',
 ]
 
 const lightboxOpen = ref(false)

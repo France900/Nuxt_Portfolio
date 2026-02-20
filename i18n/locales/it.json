@@ -134,7 +134,34 @@
       "ariaToIt": "Passa a italiano"
     }
   },
-    "fallback": {
+  "footer": {
+    "brand": {
+      "logoAlt": "Logo portfolio",
+      "titleLine1": "Francesco Livio",
+      "titleLine2": "Portfolio",
+      "description": "Sviluppo front-end orientato a UX chiara, codice manutenibile e impatto concreto sul business."
+    },
+    "navigation": {
+      "title": "Navigazione",
+      "home": "Home",
+      "whatsHere": "Cosa trovi qui",
+      "landing": "Landing page",
+      "about": "Chi sono"
+    },
+    "contacts": {
+      "title": "Contatti",
+      "phone": "+39 340 379 1979"
+    },
+    "social": {
+      "linkedinAria": "LinkedIn",
+      "instagramAria": "Instagram",
+      "githubAria": "GitHub"
+    },
+    "bottom": {
+      "copyright": "Francesco. Tutti i diritti riservati."
+    }
+  },
+  "fallback": {
     "badge": "Pagina mancante",
     "title": "Benvenuto nella pagina di fallback",
     "body": "Il contenuto che cerchi non esiste, probabilmente hai cliccato un link di esempio del menu.",
