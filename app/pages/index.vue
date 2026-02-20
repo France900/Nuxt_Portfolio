@@ -14,17 +14,23 @@
     </div>
 
     <!-- Altri lavori -->
-    <p class="text-slate-300">
-      Ulteriori siti da me realizzati:
-      <br>
-      Sito realizato per un professionista in psicologia in VUE "<NuxtLink
-        to="https://sito-giuseppe-marchi.netlify.app/">Giuseppe Marchi</NuxtLink>" con la repo a questo
-      <NuxtLink to="https://github.com/France900/Sito_Giuseppe_Marchi"
-        class="text-blue-400 underline hover:text-blue-300">
-        {{ t('home.repo.linkLabel') }}
-      </NuxtLink>.
-      Vecchio sito Gecko Developers realizato in react e recisionato: Coming soon
-    </p>
+    <section class="w-full rounded-xl border border-slate-800 bg-slate-900/60 p-4 md:p-5">
+      <p class="text-sm font-medium text-slate-400">Ulteriori siti realizzati da me</p>
+      <div class="mt-3 space-y-3 text-sm text-slate-300">
+        <p>
+          Progetto in Vue per un professionista in psicologia:
+          <NuxtLink to="https://sito-giuseppe-marchi.netlify.app/" class="text-blue-400 underline hover:text-blue-300">
+            Giuseppe Marchi
+          </NuxtLink>
+          (<NuxtLink to="https://github.com/France900/Sito_Giuseppe_Marchi" class="text-blue-400 underline hover:text-blue-300">
+            repository
+          </NuxtLink>).
+        </p>
+        <p>
+          Versione precedente del sito Gecko Developers in React: <span class="text-slate-400">Coming soon</span>.
+        </p>
+      </div>
+    </section>
 
     <!-- Intro -->
     <section class="rounded-2xl border border-slate-800 bg-slate-900/60 p-6 lg:p-10">

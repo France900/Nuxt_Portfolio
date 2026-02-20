@@ -24,7 +24,8 @@
       "paragraph1": "Mi chiamo Francesco e sono uno sviluppatore Front-End con oltre 5 anni di esperienza in contesti IT, in ruoli diversi che spaziano dallo sviluppo web al supporto tecnico.",
       "paragraph2": "Questo sito raccoglie esperimenti, studi e progetti legati allo sviluppo web, come spazio di crescita continua, documentazione e dimostrazione di competenze tecniche pratiche.",
       "morePrefix": "Ulteriori informazioni sul mio percorso professionale e sulla mia disponibilità sono disponibili nella sezione ",
-      "moreLink": "About"
+      "moreLink": "About",
+      "moreSuffix": "."
     },
     "dev": {
       "badge": "Dev",
