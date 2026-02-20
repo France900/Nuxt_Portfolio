@@ -12,19 +12,18 @@
   },
   "home": {
     "hero": {
-      "role": "Attualmente alla ricerca di un ruolo junior front-end per consolidare l'esperienza di produzione"
+      "role": "Attualmente alla ricerca di un ruolo early-mid front-end per consolidare l'esperienza di produzione"
     },
     "repo": {
       "textBeforeLink": "Per esplorare la Repository GitHub di questo sito segui pure questo ",
       "linkLabel": "link",
-      "textAfterLink": ".",
       "privacy": "Questo sito è volutamente non indicizzato per privacy."
     },
     "intro": {
       "avatarAlt": "Avatar",
-      "paragraph1": "Ciao, mi chiamo Francesco e lavoro nell'ambito IT da ormai più di 5 anni, anche se in ruoli diversi e occupandomi di attività eterogenee, dalla parte tecnica allo sviluppo di progetti personali.",
-      "paragraph2": "Questo sito raccoglie esperimenti, studi e lavori legati allo sviluppo web, usati come spazio di crescita, documentazione e per fornire un esempio delle mie competenze pratiche in ambito web.",
-      "morePrefix": "Se vuoi un contesto più completo sul mio percorso e sulle mie disponibilità, trovi tutto nella sezione ",
+      "paragraph1": "Mi chiamo Francesco e sono uno sviluppatore Front-End con oltre 5 anni di esperienza in contesti IT, in ruoli diversi che spaziano dallo sviluppo web al supporto tecnico.",
+      "paragraph2": "Questo sito raccoglie esperimenti, studi e progetti legati allo sviluppo web, come spazio di crescita continua, documentazione e dimostrazione di competenze tecniche pratiche.",
+      "morePrefix": "Ulteriori informazioni sul mio percorso professionale e sulla mia disponibilità sono disponibili nella sezione ",
       "moreLink": "About",
       "moreSuffix": "."
     },
@@ -32,8 +31,7 @@
       "badge": "Dev",
       "kicker": "Tecnologie usate",
       "titlePrefix": "Stack e come lo sto applicando qui; scopri di più in ",
-      "titleLink": "whats here",
-      "titleSuffix": "."
+      "titleLink": "whats here"
     },
     "stack": {
       "items": {
@@ -50,16 +48,16 @@
           "description": "Gestione centralizzata delle lingue: testi organizzati in un unico punto e possibilità di attivare facilmente il cambio lingua sulle pagine principali."
         },
         "emailjs": {
-          "title": "EmailJS vs n8n",
-          "description": "n8n è più potente e flessibile ma richiede una gestione della struttura, mentre EmailJS è gratuito e integrabile direttamente via JavaScript con la propria email."
+          "title": "Email form",
+          "description": "n8n, EmailJS e recentemente Netlify form sono i tre sistemi per la creazione di form, ognuno con i suoi pro e contro."
         },
         "netlify": {
           "title": "Netlify",
-          "description": "Pubblicazione semplice del sito: collegamento a GitHub, deploy automatico a ogni aggiornamento e hosting gratuito per progetti frontend"
+          "description": "Piattaforma utilizzata per il deployment frontend, l'integrazione continua e la pubblicazione automatica tramite workflow basati su GitHub."
         },
         "codex": {
           "title": "Codex",
-          "description": "Assistente di sviluppo che, se usato con controllo sul codice, permette di aumentare la velocità di programmazione supportando scaffolding, refactoring e organizzazione del progetto."
+          "description": "Assistente di sviluppo utilizzato per supportare scaffolding del codice, refactoring e organizzazione del progetto sotto la supervisione diretta dello sviluppatore."
         }
       }
     },
@@ -70,11 +68,11 @@
       "items": {
         "clickup": {
           "title": "ClickUp",
-          "description": "Strumento centrale per la gestione delle attività di lavoro: raccolgo e organizzo le task ricevute e condivido task e avanzamenti con altri collaboratori, mantenendo priorità, stato e scadenze sempre sotto controllo."
+          "description": "Strumento di gestione task e progetti utilizzato per organizzare le attività, monitorare i progressi e collaborare in modo efficace con i membri del team."
         },
         "figma": {
           "title": "Figma",
-          "description": "Riferimento operativo per le misure dei layout e design ricevuti, estraendo le specifiche misure dei componenti e, quando necessario, realizzare schemi dei siti, wireframe o layout basici per definire la struttura delle pagine."
+          "description": "Strumento di design e collaborazione utilizzato per analizzare layout, estrarre specifiche dei componenti e creare wireframe o strutture base delle pagine quando necessario."
         }
       }
     }
@@ -149,43 +147,43 @@
   "about": {
     "hero": {
       "title": "About",
-      "subtitle": "Chi sono e Disponibilità"
+      "subtitle": "Chi sono e disponibilità"
     },
     "summary": {
-      "title": "Breve Riepilogo",
-      "p1": "Da sempre appassionato di videogame mi sono sempre approcciato al computer come una passione, fino al COVID, dove dato il tempo a disposizione intrapresi un corso di programmazione frontend cambiando così carriera dalle esperienze precedenti.",
-      "p2": "Ho avuto così il piacere di costruire siti web e mettere piede nell'affascinante mondo della programmazione, sia come programmatore frontend sia come, nel tempo, project manager per alcune startup indipendenti.",
-      "p3": "Tristemente i risvolti socioeconomici attuali hanno portato alla fine di quella esperienza da PM soprattutto con l'arrivo di una proposta per un ruolo come help-desk agli uffici IT nella sede di Esselunga, ruolo che copro attualmente.",
-      "p4": "Il mio obiettivo è trovare un'azienda dove poter vedere le mie competenze crescere, in un mondo dove la tecnologia cresce a ritmo esponenziale, e diventare sempre più padrone della capacità di sfruttare questa crescita per creare funzionalità, prodotti e contenuti, (mantenendo allo stesso tempo un equilibrio vita lavoro costruttivo)."
+      "title": "Breve riepilogo",
+      "p1": "Da sempre appassionato di videogiochi mi sono sempre approcciato al computer come una passione, fino al periodo del COVID, quando ho seguito un corso di programmazione frontend che si è poi trasformato in un percorso professionale nello sviluppo web.",
+      "p2": "Ho lavorato alla realizzazione di siti web e applicazioni frontend, maturando esperienza come sviluppatore frontend e contribuendo in seguito anche al coordinamento di progetti per piccole startup indipendenti.",
+      "p3": "Nell'ultimo anno ho lavorato in un ruolo di supporto IT in ambito aziendale, fornendo assistenza tecnica e supporto ai sistemi, continuando allo stesso tempo a rafforzare le mie competenze di programmazione e sviluppo.",
+      "p4": "Il mio obiettivo è entrare in un'azienda in cui possa sviluppare ulteriormente le mie competenze tecniche, contribuire a prodotti digitali di valore e crescere professionalmente in un contesto di lavoro equilibrato e strutturato."
     },
     "availability": {
       "title": "Disponibilità",
-      "p1": "Ovviamente come tutti ho delle preferenze molto precise ma resto aperto e flessibile a valutare qualsiasi proposta.",
+      "p1": "Sono aperto e flessibile nel valutare nuove opportunità professionali.",
       "summaryTitle": "In sintesi sono disponibile a:",
       "list": {
-        "fullTime": "Full Time o Part Time",
-        "presence": "Full presenza, ibrido o Full-Remote",
-        "travel": "Disponibilissimo a trasferimenti, disponibile a trasferte",
-        "syncTeam": "Disponibile a lavoro sincrono e/o in squadra",
-        "async": "Disponibile al lavoro asincrono"
+        "fullTime": "Full-time o part-time",
+        "presence": "In presenza, ibrido o full-remote",
+        "travel": "Trasferimenti e trasferte",
+        "syncTeam": "Lavoro e collaborazione sincroni in team",
+        "async": "Lavoro asincrono basato su task"
       },
-      "p2": "Resto disponibile a tutte le opzioni sopra elencate, considerando che ritengo di dare il massimo come produttività e soprattutto come qualità in un lavoro full-remote, compreso fra le 30 e le 32 ore, parzialmente sincrono e/o in squadra e parzialmente asincrono tramite il completamento di task.",
-      "p3": "Resto consapevole in ogni caso che i primi periodi di lavoro siano full presenza al fine di una valutazione delle risorse che porto."
+      "p2": "Rendo al meglio, soprattutto in termini di produttività e qualità, in ambienti remoti o ibridi con un buon equilibrio tra collaborazione in team ed esecuzione autonoma delle attività.",
+      "p3": "Resto comunque disponibile anche a periodi iniziali in presenza, quando necessari per onboarding e valutazione."
     },
     "details": {
       "title": "Dettagli",
       "items": {
-        "vat": "Possiedo partita IVA italiana",
-        "licenses": "Patente A e B"
+        "vat": "Partita IVA italiana",
+        "licenses": "Patente di guida: categoria A e B"
       }
     },
     "languages": {
       "title": "Lingue",
       "items": {
         "it": "Italiano - Madrelingua",
-        "en": "Inglese - C1 (unofficial)",
-        "es": "Spagnolo - A2 (unofficial)",
-        "jp": "Giapponese - Wannabe"
+        "en": "Inglese - Avanzato (C1)",
+        "es": "Spagnolo - Base (A2)",
+        "jp": "Giapponese - Conoscenza di base"
       }
     }
   }

@@ -12,19 +12,18 @@
   },
   "home": {
     "hero": {
-      "role": "Currently seeking a junior front-end role to consolidate production experience"
+      "role": "Currently seeking a early-mid front-end role to consolidate production experience"
     },
     "repo": {
       "textBeforeLink": "To explore the GitHub repository for this site, follow this ",
       "linkLabel": "link",
-      "textAfterLink": ".",
       "privacy": "This site is intentionally not indexed for privacy."
     },
     "intro": {
       "avatarAlt": "Avatar",
-      "paragraph1": "Hi, my name is Francesco and I have been working in IT for over 5 years, in different roles and on a variety of activities, from technical work to personal projects.",
-      "paragraph2": "This site collects experiments, studies, and work related to web development, used as a space for growth, documentation, and to provide an example of my practical skills in the web field.",
-      "morePrefix": "If you want more context about my journey and availability, you can find everything in the ",
+      "paragraph1": "My name is Francesco, i'm an experienced Front-End Developer with over 5 years of experience working in IT environments across different roles, from web development to technical support.",
+      "paragraph2": "This website collects experiments, studies, and projects related to web development, serving as a space for continuous growth, documentation, and demonstration of practical technical skills.",
+      "morePrefix": "Additional information about my professional background and availability can be found in the ",
       "moreLink": "About",
       "moreSuffix": " section."
     },
@@ -32,8 +31,7 @@
       "badge": "Dev",
       "kicker": "Technologies used",
       "titlePrefix": "Stack and how I am applying it here; learn more in ",
-      "titleLink": "whats here",
-      "titleSuffix": "."
+      "titleLink": "whats here"
     },
     "stack": {
       "items": {
@@ -50,16 +48,16 @@
           "description": "Centralized language management: text organized in one place and easy language switching on main pages."
         },
         "emailjs": {
-          "title": "EmailJS vs n8n",
-          "description": "n8n is more powerful and flexible but requires managing its structure, while EmailJS is free and can be integrated directly via JavaScript with your email."
+          "title": "Email form",
+          "description": "n8n, EmailJS, and more recently Netlify Forms are the three systems for building forms, each with its own pros and cons."
         },
         "netlify": {
           "title": "Netlify",
-          "description": "Simple site publishing: GitHub connection, automatic deploys on every update, and free hosting for frontend projects."
+          "description": "Platform used for frontend deployment, continuous integration, and automatic publishing through GitHub-based workflows."
         },
         "codex": {
           "title": "Codex",
-          "description": "Development assistant that, when used with code oversight, speeds up programming by supporting scaffolding, refactoring, and project organization."
+          "description": "Development assistant used to support code scaffolding, refactoring, and project organization under direct developer oversight."
         }
       }
     },
@@ -70,11 +68,11 @@
       "items": {
         "clickup": {
           "title": "ClickUp",
-          "description": "Core tool for managing work activities: I collect and organize tasks and share updates with collaborators, keeping priorities, status, and deadlines under control."
+          "description": "Task and project management tool used to organize activities, track progress, and collaborate effectively with team members."
         },
         "figma": {
           "title": "Figma",
-          "description": "Operational reference for layout measurements and received designs, extracting component specs and, when needed, creating site schemas, wireframes, or basic layouts to define page structure."
+          "description": "Design and collaboration tool used to inspect layouts, extract component specifications, and create wireframes or basic page structures when needed."
         }
       }
     }
@@ -153,39 +151,39 @@
     },
     "summary": {
       "title": "Brief summary",
-      "p1": "Always passionate about video games, I approached the computer as a hobby, until COVID, when I took a frontend programming course and changed career from my previous experiences.",
-      "p2": "I had the pleasure of building websites and stepping into the fascinating world of programming, both as a frontend developer and, over time, as a project manager for some independent startups.",
-      "p3": "Unfortunately, the current socioeconomic climate led to the end of that PM experience, especially with the arrival of an offer for a help-desk role in the IT offices at the Esselunga headquarters, a role I currently cover.",
-      "p4": "My goal is to find a company where I can see my skills grow, in a world where technology grows exponentially, and to become more and more able to leverage that growth to create features, products, and content, while also maintaining a constructive work-life balance."
+      "p1": "Always passionate about video games, I approached the computer as a hobby, until COVID, when I took a frontend programming course which evolved into a professional path in web development.",
+      "p2": "I have worked on building websites and frontend applications, gaining experience as a frontend developer and later contributing to project coordination for small independent startups.",
+      "p3": "In the last year, I worked in an IT support role within a corporate environment, where I provide technical assistance and system support, while continuing to strengthen my programming and development skills.",
+      "p4": "My objective is to join a company where I can further develop my technical expertise, contribute to meaningful digital products, and grow professionally within a balanced and structured work environment."
     },
     "availability": {
       "title": "Availability",
-      "p1": "Like everyone, I have some clear preferences, but I remain open and flexible to evaluate any proposal.",
+      "p1": "I am open and flexible in evaluating new professional opportunities.",
       "summaryTitle": "In summary, I am available for:",
       "list": {
         "fullTime": "Full-time or part-time",
         "presence": "On-site, hybrid, or full-remote",
-        "travel": "Very open to relocations and business trips",
-        "syncTeam": "Synchronous work and/or teamwork",
-        "async": "Asynchronous work"
+        "travel": "Relocations and business trips",
+        "syncTeam": "Synchronous teamwork and collaboration",
+        "async": "Asynchronous, task-based work"
       },
-      "p2": "I remain open to all the options listed above, considering that I perform at my best, especially in terms of productivity and quality, in a full-remote role between 30 and 32 hours, partly synchronous and/or team-based and partly asynchronous through task completion.",
-      "p3": "I am also aware that the first periods of work may be fully on-site in order to evaluate the resources I bring."
+      "p2": "I perform best, especially in terms of productivity and quality, in remote or hybrid environments with a balanced mix of team collaboration and independent task execution.",
+      "p3": "I am also open to initial on-site periods when required for onboarding and evaluation."
     },
     "details": {
       "title": "Details",
       "items": {
-        "vat": "I have an Italian VAT number",
-        "licenses": "Driver's license A and B"
+        "vat": "Italian VAT number",
+        "licenses": "Driving license: Category A and B"
       }
     },
     "languages": {
       "title": "Languages",
       "items": {
         "it": "Italian - Native",
-        "en": "English - C1 (unofficial)",
-        "es": "Spanish - A2 (unofficial)",
-        "jp": "Japanese - Wannabe"
+        "en": "English - Advanced (C1)",
+        "es": "Spanish - Basic (A2)",
+        "jp": "Japanese - Basic knowledge"
       }
     }
   }
