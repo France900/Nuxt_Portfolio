@@ -134,7 +134,34 @@
       "ariaToIt": "Switch to Italian"
     }
   },
-    "fallback": {
+  "footer": {
+    "brand": {
+      "logoAlt": "Portfolio logo",
+      "titleLine1": "Francesco Livio",
+      "titleLine2": "Portfolio",
+      "description": "Front-end development oriented to clear UX, maintainable code and practical business impact."
+    },
+    "navigation": {
+      "title": "Navigation",
+      "home": "Home",
+      "whatsHere": "What's here",
+      "landing": "Landing page",
+      "about": "About"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "phone": "+39 340 379 1979"
+    },
+    "social": {
+      "linkedinAria": "LinkedIn",
+      "instagramAria": "Instagram",
+      "githubAria": "GitHub"
+    },
+    "bottom": {
+      "copyright": "Francesco. All rights reserved."
+    }
+  },
+  "fallback": {
     "badge": "Missing page",
     "title": "Welcome to the fallback page",
     "body": "The content you are looking for does not exist, you probably clicked a sample link from the menu.",
